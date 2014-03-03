@@ -29,7 +29,13 @@ var Content = Backbone.Model.extend({
 		id: "",
 		title: "No Title",
 		description: "No Description",
+		color: [255, 0, 0],
 		imageURL: "http://epaper2.mid-day.com/images/no_image_thumb.gif"
+	},
+	toJSON: function() {
+		return _.extend(Backbone.Model.prototype.toJSON.call(this), { // "computed properties"
+			colorString: 'rgb(' + this.get('color').join(', ') + ')'
+		});
 	}
 });
 
