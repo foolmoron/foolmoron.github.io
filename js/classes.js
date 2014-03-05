@@ -7,7 +7,6 @@ var Router = Backbone.Router.extend({
 	},
 	
 	home: function() {
-		console.log("home");
 		var contents = {};
 		for (i in Contents) {
 			contents[i] = new ContentShortView({model: Contents[i]});
@@ -15,7 +14,6 @@ var Router = Backbone.Router.extend({
 		new ContentsView(contents);
 	},
 	subroute: function(subroute) {
-		console.log("subroute=" + subroute);
 		if (Contents[subroute]) {
 			new ContentsView([new ContentLongView({model: Contents[subroute]})]);
 		} else {
