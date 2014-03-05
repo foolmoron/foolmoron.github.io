@@ -23,12 +23,24 @@ var Router = Backbone.Router.extend({
 });
 
 var Content = Backbone.Model.extend({
+	EXTRA_TEMPLATE_PREFIX: 'templateExtra-',
 	defaults: {
 		id: "",
 		title: "No Title",
 		description: "No Description",
 		color: [255, 0, 0],
-		imageURL: "http://epaper2.mid-day.com/images/no_image_thumb.gif"
+		extraContent: null
+	},
+
+	initialize: function() {
+		var extraContent = this.get('extraContent');
+		if (!extraContent) {
+			var extraTemplate = $('#' + this.EXTRA_TEMPLATE_PREFIX + this.get('id'));
+			if (extraTemplate.length) {
+				var extraContent = _.template(extraTemplate.html(), this.toJSON());
+				this.set('extraContent', extraContent);
+			}
+		}
 	},
 	toJSON: function() {
 		return _.extend(Backbone.Model.prototype.toJSON.call(this), { // "computed properties"
@@ -66,8 +78,10 @@ var ContentLongView = Backbone.View.extend({
 		var self = this;
 		var el = $(this.el);
 		
-		var content = _.template(this.contentTemplate, this.model.toJSON());
+		var modelJSON = this.model.toJSON();
+		var content = _.template(this.contentTemplate, modelJSON);
 		el.html(content);
+		$('#extra', el).html(modelJSON.extraContent);
 		
 		return this;
 	}

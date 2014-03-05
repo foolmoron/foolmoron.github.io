@@ -16,6 +16,7 @@
 		<script src="js/main.js" type="text/javascript"></script>
 		<script src="CanvasPixels/js/pixels.js"></script>
 	</body>
+	<!-- main page templates -->
 	<script type="text/template" id="templateMainContentHeader">
 		<a href="#">home</a><br />
 		<a href="#<%= test %>"><%= test %></a><br />
@@ -34,6 +35,8 @@
 		<hr />
 		<h3>Thank you, <%= test %>, come again!</h3>
 	</script>
+	<!---->
+	<!-- generic individual content templates -->
 	<script type="text/template" id="templateContentShort">
 		<div class="col-sm-10 content" data-pixel-colors='<%= colorString %>'>
 			<a href="#<%= id %>"><h1><%= title %></h1></a>
@@ -44,7 +47,7 @@
 		<div class="col-sm-10 content" data-pixel-colors='<%= colorString %>'>
 			<h1><%= title %></h1>
 			<h3><%= description %></h3>
-			<img src="<%= imageURL %>" />
+			<div id="extra"></div>
 			<a href="#"><h3>Go Back</h3></a>
 		</div>
 	</script>
@@ -54,4 +57,16 @@
 			<a href="#"><h3>Go Back</h3></a>
 		</div>
 	</script>
+	<!---->
+	<!-- extra individual templates -->
+	<script type="text/template" id="templateExtra-one">
+		<p><img src="http://img.imgcake.com/foolmoron/sclapgifym.gif" /></p>
+		<iframe src="https://googledrive.com/host/0B-aR7C8zJuzoUE1RYmR3TVlQRVk/PrincessTinaGameOnly.html"
+			width="920" height="620" frameborder="0" />
+	</script>
+	<script type="text/template" id="templateExtra-two">
+		<iframe src="//itch.io/embed/2595" 
+			width="552" height="167" frameborder="0" />
+	</script>
+	<!---->
 </html>

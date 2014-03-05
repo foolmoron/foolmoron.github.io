@@ -3,7 +3,7 @@ $(function() { // have to wait for DOM to load to get templates
 	Contents.test = new Content({
 		id: "test",
 		title: "Test",
-		imageURL: "http://img.imgcake.com/foolmoron/Twilightclapeb.gif"
+		extraContent: "<img src='http://img.imgcake.com/foolmoron/Twilightclapeb.gif' />"
 	});
 	Contents.one = new Content({
 		id: "one",
