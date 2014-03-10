@@ -1,26 +1,43 @@
 .name {
-	font-size: 42px;
+	font-size: 3.5em;
 }
 
 .subtitle {
-	font-size: 20px;
+	font-size: 2em;
 	font-style: italic;
 }
 
 .title {
-	font-size: 36px;
+	font-size: 2.5em;
+	display: inline-block;
 }
 
 .description {
-	font-size: 24px;
+	font-size: 1.25em;
 }
 
 .back {
+	font-size: 1.5em;
+}
 
+.divider {
+	height: 0.7em;
+	width: 100%;
+	background-image: url('../img/gradient.png');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-color: #000;
+	margin: 0;
+}
+.divider.half {
+	height: 0.35em;
 }
 
 /* overwrite CanvasPixels css */
 .content {
 	height: auto;
-	min-height: 150px;
+}
+
+canvas {
+	z-index: 9999999;
 }

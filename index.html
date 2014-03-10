@@ -37,27 +37,28 @@
 		</div>
 	</script>
 	<script type="text/template" id="templateMainContentFooter">
-		<div class="container">
-			<div class="row">
-				<hr />
-				<h3>Thank you, <%= test %>, come again!</h3>
-			</div>
-		</div>
+		<div data-pixel-colors='rgb(255, 255, 255)' style="height: 100px;"></div>
 	</script>
 	<!---->
 	<!-- generic individual content templates -->
 	<script type="text/template" id="templateContentShort">
 		<div class="col-sm-10 content" data-pixel-colors='<%= colorString %>'>
+			<div class="divider half" style="background-color:<%= colorString %>" />
 			<a href="#<%= id %>"><div class="title"><%= title %></div></a>
 			<div class="description"><%= description %></div>
+			<div class="extra"><%= extraContent %></div>
+			<div class="divider half" style="background-color:<%= colorString %>" />
 		</div>
 	</script>
 	<script type="text/template" id="templateContentLong">
 		<div class="col-sm-10 content" data-pixel-colors='<%= colorString %>'>
+			<div class="divider half" style="background-color:<%= colorString %>" />
 			<div class="title"><%= title %></div>
 			<div class="description"><%= description %></div>
-			<div id="extra"></div>
+			<div class="extra"><%= extraContent %></div>
+			<div id="details"><%= detailsContent %></div>
 			<a href="#"><div class="back">Go Back</div></a>
+			<div class="divider half" style="background-color:<%= colorString %>" />
 		</div>
 	</script>
 	<script type="text/template" id="templateContentInvalid">
@@ -67,15 +68,49 @@
 		</div>
 	</script>
 	<!---->
-	<!-- extra individual templates -->
-	<script type="text/template" id="templateExtra-one">
-		<p><img src="http://img.imgcake.com/foolmoron/sclapgifym.gif" /></p>
-		<iframe src="https://googledrive.com/host/0B-aR7C8zJuzoUE1RYmR3TVlQRVk/PrincessTinaGameOnly.html"
-			width="920" height="620" frameborder="0" />
+	<!-- individual templates extras -->
+	<script type="text/template" id="templateExtra-github">
+		<iframe src="https://githubbadge.appspot.com/foolmoron?s=1&a=0" 
+			style="border: 0;height: 142px;width: 200px;overflow: hidden;" frameBorder="0"></iframe>
 	</script>
-	<script type="text/template" id="templateExtra-two">
+	<script type="text/template" id="templateExtra-flappypuzzle">
+		<iframe src="//itch.io/embed/2595?linkback=true" 
+			width="552" height="167" frameborder="0"></iframe>
+	</script>
+	<script type="text/template" id="templateExtra-princesstina">
+		<iframe src="//itch.io/embed/2595?linkback=true" 
+			width="552" height="167" frameborder="0"></iframe>
+	</script>
+	<script type="text/template" id="templateExtra-cityquake">
+		<p>
+			<a href="http://www.newgrounds.com/portal/view/616600" title="Play City Quake on Newgrounds" target="_blank">
+				<img src="img/cityquakeplaynow.png" style="max-height: 60px;">
+			</a>
+		</p>
+	</script>
+	<script type="text/template" id="templateExtra-retroverse">
+		<p>
+			<a href="http://www.desura.com/games/retroverse" title="Retroverse on Desura">
+				<img src="http://button.desura.com/play/medium/games/23621.png" alt="Desura Digital Distribution" width="260" height="50" border="0">
+			</a>
+		</p>
+		<p>
+			<a href="http://www.desura.com/games/retroverse" title="View Retroverse on Desura" target="_blank">
+				<img src="http://button.desura.com/rating/medium/games/23621.png" alt="Retroverse">
+			</a>
+		</p>
+	</script>
+	<!---->
+	<!-- individual templates details -->
+	<script type="text/template" id="templateDetails-github">
+	</script>
+	<script type="text/template" id="templateDetails-flappypuzzle">
 		<iframe src="//itch.io/embed/2595" 
 			width="552" height="167" frameborder="0" />
+	</script>
+	<script type="text/template" id="templateDetails-princesstina">
+		<iframe src="https://googledrive.com/host/0B-aR7C8zJuzoUE1RYmR3TVlQRVk/PrincessTinaGameOnly.html"
+			width="920" height="620" frameborder="0" />
 	</script>
 	<!---->
 </html>
