@@ -18,22 +18,29 @@
 	</body>
 	<!-- main page templates -->
 	<script type="text/template" id="templateMainContentHeader">
-		<a href="#">home</a><br />
-		<a href="#<%= test %>"><%= test %></a><br />
-		<a href="#somesubroute">subroute</a><br />
-		<a href="javascript:void(0)" onclick="document.location.href=('#'+$('#routeTest').val());">go to any subroute:</a><input id="routeTest" type="text" /><br />
-		<hr />
+		<canvas id="pixels" style="display: none;"></canvas>
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-10 header" data-pixel-colors='<%= colorString %>'>
+					<h1>Momin Khan</h1>
+					<h4>The .io is ironic</h4>
+				</div>
+			</div>
+		</div>
 	</script>
 	<script type="text/template" id="templateMainContentWrapper">
 		<div class="container">
 			<div class="row" id="content">
 			</div>
 		</div>
-		<canvas id="pixels" style="display: none;"></canvas>
 	</script>
 	<script type="text/template" id="templateMainContentFooter">
-		<hr />
-		<h3>Thank you, <%= test %>, come again!</h3>
+		<div class="container">
+			<div class="row">
+				<hr />
+				<h3>Thank you, <%= test %>, come again!</h3>
+			</div>
+		</div>
 	</script>
 	<!---->
 	<!-- generic individual content templates -->
