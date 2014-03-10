@@ -1,0 +1,26 @@
+.name {
+	font-size: 48px;
+}
+
+.subtitle {
+	font-size: 24px;
+	font-style: italic;
+}
+
+.title {
+	font-size: 36px;
+}
+
+.description {
+	font-size: 24px;
+}
+
+.back {
+
+}
+
+/* overwrite CanvasPixels css */
+.content {
+	height: auto;
+	min-height: 150px;
+}
