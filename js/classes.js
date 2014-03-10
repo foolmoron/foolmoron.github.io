@@ -12,6 +12,8 @@ var Router = Backbone.Router.extend({
             contents[i] = new ContentShortView({model: Contents[i]});
         }
         new ContentsView(contents);
+
+        MainModel.get('randomizeSubtitle').call(MainModel);
     },
     subroute: function(subroute) {
         if (Contents[subroute]) {
@@ -19,6 +21,8 @@ var Router = Backbone.Router.extend({
         } else {
             new ContentsView([new ContentInvalidView()]);
         }
+
+        MainModel.get('randomizeSubtitle').call(MainModel);
     }
 });
 
@@ -141,7 +145,8 @@ var MainView = Backbone.View.extend({
     el: $('body'),
     
     initialize: function(contents) {
-        _.bindAll(this, 'render');
+        _.bindAll(this, 'render', 'updateSubtitle');
+        this.model.bind('change', this.updateSubtitle);
         this.headerTemplate = $('#templateMainContentHeader').html();
         this.footerTemplate = $('#templateMainContentFooter').html();
         this.contentWrapperTemplate = $('#templateMainContentWrapper').html();
@@ -152,13 +157,16 @@ var MainView = Backbone.View.extend({
         var self = this;
         var el = $(this.el);
         
-        var header = _.template(this.headerTemplate, this.model);
+        var header = _.template(this.headerTemplate, this.model.toJSON());
         el.append(header);
         var contentWrapper = _.template(this.contentWrapperTemplate);
         el.append(contentWrapper);
-        var footer = _.template(this.footerTemplate, this.model);
+        var footer = _.template(this.footerTemplate, this.model.toJSON());
         el.append(footer);
         
         return this;
+    },
+    updateSubtitle: function() {
+        $('.subtitle', this.el).text(this.model.get('subtitle'));
     }
 });

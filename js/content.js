@@ -42,20 +42,22 @@ $(function() { // have to wait for DOM to load to get templates
         {text: "Congratulations, you are the 1st visitor!", weight: 1},
         {text: "Achievement Unlocked: Rare and Pointless Random Message", weight: 0.1}
     ];
-    var randomSubtitle = "";
-    var weightTotal = POSSIBLE_SUBTITLES.reduce(function(acc, subtitle) { return acc + subtitle.weight; }, 0);
-    var weightedRandom = Math.random() * weightTotal;   
-    var weightSum = 0;
-    for (var i = 0; i < POSSIBLE_SUBTITLES.length; i++) {
-        weightSum += POSSIBLE_SUBTITLES[i].weight;
-        if (weightedRandom < weightSum) {
-            randomSubtitle = POSSIBLE_SUBTITLES[i].text;
-            break;
-        }
-    }
-    MainModel = {
+    MainModel = new Backbone.Model({
         colorString: "rgb(255, 140, 0)",
-        subtitle: randomSubtitle,
-        test: "Testy Test"
-    };
+        subtitle: "",
+        test: "Testy Test",
+
+        randomizeSubtitle: function() {
+            var weightTotal = POSSIBLE_SUBTITLES.reduce(function(acc, subtitle) { return acc + subtitle.weight; }, 0);
+            var weightedRandom = Math.random() * weightTotal;   
+            var weightSum = 0;
+            for (var i = 0; i < POSSIBLE_SUBTITLES.length; i++) {
+                weightSum += POSSIBLE_SUBTITLES[i].weight;
+                if (weightedRandom < weightSum) {
+                    this.set('subtitle', POSSIBLE_SUBTITLES[i].text);
+                    break;
+                }
+            }
+        }
+    });
 });
