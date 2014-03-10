@@ -141,11 +141,11 @@ var MainView = Backbone.View.extend({
 		var self = this;
 		var el = $(this.el);
 		
-		var header = _.template(this.headerTemplate, {colorString: "rgb(0, 255, 255)"});
+		var header = _.template(this.headerTemplate, this.model);
 		el.append(header);
 		var contentWrapper = _.template(this.contentWrapperTemplate);
 		el.append(contentWrapper);
-		var footer = _.template(this.footerTemplate, {test: "Testy McTesterson"});
+		var footer = _.template(this.footerTemplate, this.model);
 		el.append(footer);
 		
 		return this;
