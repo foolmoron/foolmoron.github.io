@@ -6,16 +6,13 @@ var Router = Backbone.Router.extend({
         ":subroute": "subroute",
     },
     
-    route: function() { // fires on any route change
-        Backbone.Router.prototype.route.apply(this, arguments); // super()
-        MainModel.get('randomizeSubtitle').call(MainModel);
-    },
     home: function() {
         var contents = {};
         for (i in Contents) {
             contents[i] = new ContentShortView({model: Contents[i]});
         }
         new ContentsView(contents);
+        MainModel.get('randomizeSubtitle').call(MainModel);
     },
     subroute: function(subroute) {
         if (Contents[subroute]) {
@@ -23,6 +20,7 @@ var Router = Backbone.Router.extend({
         } else {
             new ContentsView([new ContentInvalidView()]);
         }
+        MainModel.get('randomizeSubtitle').call(MainModel);
     }
 });
 
