@@ -10,30 +10,35 @@ $(function() { // have to wait for DOM to load to get templates
     Contents.retroverse = new Content({
         id: "retroverse",
         title: "Retroverse",
+        bannerURL: "img/retroversebanner.png",
         description: "My first complete, shipped game! A 1P/2P roguelike with lots of powerups and levels.<br />Made at the UVA SGD with a team of 7ish.",
         color: [50, 50, 50]
     });
     Contents.princesstina = new Content({
         id: "princesstina",
         title: "Princess Tina",
+        bannerURL: "img/princesstinabanner.png",
         description: "A cute, Nintendo-hard platformer for <a href='http://globalgamejam.org' target='_blank'>Global Game Jam 2014</a>.<br />Developed for the Unity web player with a team of 7.",
         color: [255, 100, 255]
     });
     Contents.flappypuzzle = new Content({
         id: "flappypuzzle",
         title: "Flappy Puzzle",
+        bannerURL: "img/flappypuzzlebanner.png",
         description: "A touch-based game made for the <a href='http://itch.io/jam/flappyjam' target='_blank'>Flappy Jam</a>.<br />Graphics inspired by Tetris, difficulty and controls inspired by Flappy Bird.",
         color: [202, 206, 80]
     });
     Contents.skylize = new Content({
         id: "skylize",
         title: "Skylize",
+        bannerURL: "img/skylizebanner.png",
         description: "An experiment with a velocity-based touch control system, made for the <a href='http://itch.io/jam/cyberpunk-jam' target='_blank'>Cyberpunk Jam</a>.<br />Paint the black sky with neon lights and share your creation.",
         color: [0, 255, 255]
     });
     Contents.cityquake = new Content({
         id: "cityquake",
         title: "City Quake",
+        bannerURL: "img/cityquakebanner.png",
         description: "My first touch-based web game. An action-puzzle game where you destroy a city with earthquakes.<br />Made in Construct 2 for the Newgrounds <a href='http://www.newgrounds.com/collection/construct2touchjam' target='_blank'>Construct 2 Jam</a>.",
         color: [110, 70, 0]
     });

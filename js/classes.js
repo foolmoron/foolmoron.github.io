@@ -31,6 +31,7 @@ var Content = Backbone.Model.extend({
     defaults: {
         id: "",
         title: "No Title",
+        bannerURL: null,
         description: "No Description",
         color: [255, 0, 0],
         extraContent: null,

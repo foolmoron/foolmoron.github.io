@@ -61,7 +61,11 @@
 	<script type="text/template" id="templateContentLong">
 		<div class="col-sm-10 content" data-pixel-colors='<%= colorString %>'>
 			<div class="divider half" style="background-color:<%= colorString %>" />
-			<div class="title"><%= title %></div>
+			<% if (bannerURL) { %>
+				<img class="banner" src="<%= bannerURL%>" />
+			<% } else { %>
+				<div class="title"><%= title %></div>
+			<% } %>
 			<a href="#"><div class="back">Go Back</div></a>
 			<div class="description"><%= description %></div>
 			<div class="extra"><%= extraContent %></div>
