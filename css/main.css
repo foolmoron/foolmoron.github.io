@@ -5,11 +5,20 @@
 .subtitle {
 	font-size: 2em;
 	font-style: italic;
+	margin-top: -0.5em;
 }
 
 .title {
 	font-size: 2.5em;
 	display: inline-block;
+}
+
+.socialButtons {
+	margin-bottom: 5px;
+}
+.socialButtons img {
+	width: 32px;
+	margin-right: 6px;
 }
 
 .description {
