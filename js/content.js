@@ -43,9 +43,9 @@ $(function() { // have to wait for DOM to load to get templates
         color: [110, 70, 0]
     });
 
-    var POSSIBLE_SUBTITLES = [
-        {text: "The .io is ironic", weight: 3},
+    POSSIBLE_SUBTITLES = [
         {text: "Game Developer, etc.", weight: 3},
+        {text: "The .io is ironic", weight: 3},
         {text: "Ask about my username", weight: 2},
         {text: "My games are better than my web design", weight: 1},
         {text: "Donate to 1GfseRZYS6pebUscxv2kYpviwBMY1E8Hdb", weight: 1},
