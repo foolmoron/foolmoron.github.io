@@ -38,8 +38,8 @@
 	height: 0.7em;
 	width: 100%;
 	background-image: url('../img/gradient.png');
-	background-repeat: no-repeat;
-	background-size: cover;
+	background-repeat: repeat-y;
+	background-size: 100%;
 	background-color: #000;
 	margin: 0;
 }
