@@ -18,7 +18,7 @@ $(function() { // have to wait for DOM to load to get templates
         id: "princesstina",
         title: "Princess Tina",
         bannerURL: "img/princesstinabanner.png",
-        description: "A cute, Nintendo-hard platformer for <a href='http://globalgamejam.org' target='_blank'>Global Game Jam 2014</a>.<br />Developed for the Unity web player with a team of 7.",
+        description: "A cute, Nintendo-hard platformer for <a href='http://globalgamejam.org/2014/games/princess-tina' target='_blank'>Global Game Jam 2014</a>.<br />Developed for the Unity web player with a team of 7.",
         color: [255, 100, 255]
     });
     Contents.flappypuzzle = new Content({
