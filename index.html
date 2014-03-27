@@ -29,11 +29,11 @@
 					<div class="subtitle"><%= subtitle %></div>
 					<div class="socialButtons">
 						<!-- Icons by Dan Leech http://www.iconarchive.com/show/simple-icons-by-danleech.1.html -->
-						<a href="https://github.com/foolmoron" target="_blank"><img src="img/github_512.png" /></a>
-						<a href="mailto:foolmoron@gmail.com" target="_blank"><img src="img/gmail_512.png" /></a>
-						<a href="http://linkedin.com/in/momink" target="_blank"><img src="img/linkedin_512.png" /></a>
-						<a href="https://twitter.com/foolmoron" target="_blank"><img src="img/twitter_512.png" /></a>
-						<a href="http://steamcommunity.com/id/foolmoron" target="_blank"><img src="img/steam_512.png" /></a>
+						<a href="mailto:<%= secretAntiRobotEmail %>" target="_blank"><img src="img/gmail_512.png" title="<%= secretAntiRobotEmail %>" /></a>
+						<a href="https://github.com/foolmoron" target="_blank"><img src="img/github_512.png" title="GitHub" /></a>
+						<a href="http://linkedin.com/in/momink" target="_blank"><img src="img/linkedin_512.png" title="LinkedIn" /></a>
+						<a href="https://twitter.com/foolmoron" target="_blank"><img src="img/twitter_512.png" title="Twitter" /></a>
+						<a href="http://steamcommunity.com/id/foolmoron" target="_blank"><img src="img/steam_512.png" title="Steam" /></a>
 					</div>
 				</div>
 			</div>
@@ -86,6 +86,12 @@
 		<iframe src="https://githubbadge.appspot.com/foolmoron?s=1&a=0" 
 			style="border: 0;height: 142px;width: 200px;overflow: hidden;" frameBorder="0"></iframe>
 	</script>
+	<script type="text/template" id="templateExtra-srrn1">
+		<p><a href='http://www.srrngames.com/' target='_blank'><img src="img/srrn.png" /></a></p>
+	</script>
+	<script type="text/template" id="templateExtra-srrn2">
+		<p><a href='http://www.srrngames.com/' target='_blank'><img src="img/srrn.png" /></a></p>
+	</script>
 	<script type="text/template" id="templateExtra-flappypuzzle">
 		<iframe src="//itch.io/embed/2595?linkback=true" 
 			width="552" height="167" frameborder="0"></iframe>
@@ -120,6 +126,10 @@
 	<!---->
 	<!-- individual templates details -->
 	<script type="text/template" id="templateDetails-github">
+	</script>
+	<script type="text/template" id="templateDetails-srrn1">
+	</script>
+	<script type="text/template" id="templateDetails-srrn2">
 	</script>
 	<script type="text/template" id="templateDetails-flappypuzzle">
 	</script>

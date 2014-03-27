@@ -3,9 +3,21 @@ MainModel = null;
 $(function() { // have to wait for DOM to load to get templates
     Contents.github = new Content({
         id: "github",
-        title: "Github",
+        title: "GitHub",
         description: "The full source code for all of my non-work projects is hosted on my GitHub!",
         color: [0, 0, 190]
+    });
+    Contents.srrn1 = new Content({
+        id: "srrn1",
+        title: "2D Vita Platformer",
+        description: "A yet-to-be-revealed platformer I worked on at SRRN Games using the Unity Vita plugin.",
+        color: [0, 200, 50]
+    });
+    Contents.srrn2 = new Content({
+        id: "srrn2",
+        title: "Educational Web Game",
+        description: "A not-yet-released HTML5 educational game with city building and resource management elements.<br />Yes, there's an energy system!",
+        color: [0, 180, 255]
     });
     Contents.retroverse = new Content({
         id: "retroverse",
@@ -54,6 +66,7 @@ $(function() { // have to wait for DOM to load to get templates
         {text: "Achievement Unlocked: Rare and Pointless Random Message", weight: 0.1}
     ];
     MainModel = new Backbone.Model({
+    	secretAntiRobotEmail: "foolmoron@gmail.com",
         colorString: "rgb(255, 140, 0)",
         subtitle: "",
         test: "Testy Test",
