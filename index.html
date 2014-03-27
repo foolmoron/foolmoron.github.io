@@ -83,6 +83,7 @@
 	<!---->
 	<!-- individual templates extras -->
 	<script type="text/template" id="templateExtra-github">
+		<br />
 		<iframe src="https://githubbadge.appspot.com/foolmoron?s=1&a=0" 
 			style="border: 0;height: 142px;width: 200px;overflow: hidden;" frameBorder="0"></iframe>
 	</script>
@@ -126,6 +127,50 @@
 	<!---->
 	<!-- individual templates details -->
 	<script type="text/template" id="templateDetails-github">
+		<style>
+			table {
+				font-size: 1.25em;
+				margin-bottom: 10px;
+			}
+			table td {
+				vertical-align: middle;
+				border-bottom: 2px solid;
+			}
+			table tr {
+				height: 50px;
+			}
+			table tr:last-child > td {
+				border-bottom: 0px;				
+			}
+		</style>
+
+		<div style="font-size: 2em;">Interesting repos:</div>
+		<table>
+		    <colgroup>
+		       <col span="1" style="width: 20%;">
+		       <col span="1" style="width: 80%;">
+		    </colgroup>
+			<tr>
+				<td><a href='https://github.com/foolmoron/Skylize' target='_blank'>Skylize</a></td>
+			 	<td>Less than 400 lines of CoffeeScript! Includes a <a href='https://github.com/foolmoron/Skylize/blob/master/client.coffee#L118-128' target='_blank'>method</a> for converting arbitrarily long strings into short, shareable strings.</td>
+			 </tr>
+			 <tr>
+			 	<td><a href='https://github.com/foolmoron/CanvasPixels' target='_blank'>Canvas Pixels</a></td>
+			 	<td>The pixel effect on this website. Had to write a bunch of basic constructs for some reason (RGBA color, interpolation, etc.)<td>
+			 </tr>
+			 <tr>
+			 	<td><a href='https://github.com/foolmoron/foolmoron.github.io' target='_blank'>foolmoron.github.io</a></td>
+			 	<td>This very website! Experimenting with content-driven single-page websites using Backbone.<td>
+			 </tr>
+			 <tr>
+			 	<td><a href='https://github.com/foolmoron/ggj14' target='_blank'>Princess Tina</a></td>
+			 	<td>You can pretty easily make new levels for the game if you use an existing level as a base. Try it out if you enjoyed the game!<td>
+			 </tr>
+			 <tr>
+			 	<td><a href='https://github.com/foolmoron/Retroverse' target='_blank'>Retroverse</a></td>
+			 	<td>A total mess, but it has some gems buried in it, such as: a system for <a href='https://github.com/foolmoron/Retroverse/tree/master/Retroverse/Retroverse/History' target='_blank'>reversing time</a>, and a <a href='https://github.com/foolmoron/Retroverse/blob/master/Retroverse/Retroverse/Names.cs' target='_blank'>random name generator</a>.<td>
+			 </tr>
+		</table>
 	</script>
 	<script type="text/template" id="templateDetails-srrn1">
 	</script>
