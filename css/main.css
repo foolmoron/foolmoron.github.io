@@ -47,6 +47,29 @@
 	height: 0.35em;
 }
 
+.role {
+	margin-top: -8px;
+}
+.role > li {
+	font-size: 1.2em;
+}
+
+/* tables */
+table {
+	font-size: 1.25em;
+	margin-bottom: 10px;
+}
+table td {
+	vertical-align: middle;
+	border-bottom: 2px solid;
+}
+table tr {
+	height: 50px;
+}
+table tr:last-child > td {
+	border-bottom: 0px;				
+}
+
 /* overwrite CanvasPixels css */
 .content {
 	height: auto;
