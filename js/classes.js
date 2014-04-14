@@ -13,6 +13,7 @@ var Router = Backbone.Router.extend({
         }
         new ContentsView(contents);
         MainModel.get('randomizeSubtitle').call(MainModel);
+        ga('send', 'pageview', "home");
     },
     subroute: function(subroute) {
         if (Contents[subroute]) {
@@ -21,6 +22,7 @@ var Router = Backbone.Router.extend({
             new ContentsView([new ContentInvalidView()]);
         }
         MainModel.get('randomizeSubtitle').call(MainModel);
+        ga('send', 'pageview', subroute);
     }
 });
 
