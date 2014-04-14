@@ -137,6 +137,18 @@ var ContentsView = Backbone.View.extend({
             var content = this.contents[i];
             el.append(content.render().el);
         }
+
+        $('a').off('click').on('click', function(evt) {
+            var href = this.href;
+            if (this.host != window.location.host) {
+                ga('send', 'event', 'Outbound Link', 'click', href, {
+                    hitCallback: function() {
+                        window.open(href, '_blank');
+                    }
+                });
+                evt.preventDefault();
+            }
+        });
         
         return this;
     }
