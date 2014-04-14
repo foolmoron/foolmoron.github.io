@@ -141,12 +141,9 @@ var ContentsView = Backbone.View.extend({
         $('a').off('click').on('click', function(evt) {
             var href = this.href;
             if (this.host != window.location.host) {
-                ga('send', 'event', 'Outbound Link', 'click', href, {
-                    hitCallback: function() {
-                        window.open(href, '_blank');
-                    }
-                });
-                evt.preventDefault();
+                //Don't need to prevent default click behavior as all links have target=_blank
+                //So just report the event and the JS will run properly in the background as the link is opened in a new tab
+                ga('send', 'event', 'Outbound Link', 'click');
             }
         });
         
