@@ -13,10 +13,10 @@ $(function() { // have to wait for DOM to load to get templates
         description: "A yet-to-be-revealed platformer I worked on at SRRN Games using the Unity Vita plugin.",
         color: [0, 200, 50]
     });
-    Contents.srrn2 = new Content({
-        id: "srrn2",
-        title: "Educational Web Game",
-        description: "A not-yet-released HTML5 educational game with city building and resource management elements.<br />Yes, there's an energy system!",
+    Contents.sws = new Content({
+        id: "sws",
+        title: "Stormwater Sentries",
+        description: "An HTML5 educational resource management browser game about reducing stormwater runoff on your property.<br />Developed at SRRN Games in collaboration with local Virginia organizations.",
         color: [0, 180, 255]
     });
     Contents.retroverse = new Content({
