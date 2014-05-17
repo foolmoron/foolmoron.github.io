@@ -7,6 +7,12 @@ $(function() { // have to wait for DOM to load to get templates
         description: "The full source code for all of my non-work projects is hosted on my GitHub!",
         color: [0, 0, 190]
     });
+    Contents.honeybundles = new Content({
+        id: "honeybundles",
+        title: "Honey Bundles",
+        description: "A stop-and-go endless runner for <a href='http://www.ludumdare.com/compo/'>Ludum Dare 29</a>'s theme: \"Beneath the Surface\".<br />Developed for the Unity web player entirely by myself.",
+        color: [255, 255, 80]
+    });
     Contents.srrn1 = new Content({
         id: "srrn1",
         title: "2D Vita Platformer",
