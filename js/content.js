@@ -7,6 +7,12 @@ $(function() { // have to wait for DOM to load to get templates
         description: "The full source code for all of my non-work projects is hosted on my GitHub!",
         color: [0, 0, 190]
     });
+    Contents.uncivilize = new Content({
+        id: "uncivilize",
+        title: "Uncivilize",
+        description: "A 2D action-strategy game made during <a href='http://www.srrngames.com/were-jammin/' target='_blank'>SRRN Game Jam #1</a>.<br />Inspired by the randomly-chosen past Ludum Dare themes 'classic roles reversed', 'atmosphere', and 'all natural'.<br />Click logo to play!",
+        color: [221, 168, 91]
+    });
     Contents.honeybundles = new Content({
         id: "honeybundles",
         title: "Honey Bundles",
@@ -22,7 +28,7 @@ $(function() { // have to wait for DOM to load to get templates
     Contents.sws = new Content({
         id: "sws",
         title: "Stormwater Sentries",
-        description: "An HTML5 educational resource management browser game about reducing stormwater runoff on your property.<br />Developed at SRRN Games in collaboration with local Virginia organizations.",
+        description: "An HTML5 educational resource management browser game about reducing stormwater runoff on your property.<br />Developed at SRRN Games in collaboration with local Virginia organizations.<br />Click logo to play!",
         color: [0, 180, 255]
     });
     Contents.retroverse = new Content({
