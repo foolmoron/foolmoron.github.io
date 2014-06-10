@@ -7,6 +7,13 @@ $(function() { // have to wait for DOM to load to get templates
         description: "The full source code for all of my non-work projects is hosted on my GitHub!",
         color: [0, 0, 190]
     });
+    Contents.kawa = new Content({
+        id: "kawa",
+        title: "Kawaii Aishiteru Wormhole Adventure",
+        bannerURL: "img/kawabanner.png",
+        description: "A dating sim made for <a href='http://fuckthisjam.com/' target='_blank'>Fuck This Jame 2014</a>.<br />The goal was to make a game in a genre that you hate and/or know nothing about.",
+        color: [17, 0, 88]
+    });
     Contents.uncivilize = new Content({
         id: "uncivilize",
         title: "Uncivilize",
