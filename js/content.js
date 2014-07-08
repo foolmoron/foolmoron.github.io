@@ -7,6 +7,12 @@ $(function() { // have to wait for DOM to load to get templates
         description: "The full source code for all of my non-work projects is hosted on my GitHub!",
         color: [0, 0, 190]
     });
+    Contents.nsn = new Content({
+        id: "nsn",
+        title: "Night Shift Ninja",
+        description: "A 2D stealth-action-puzzle game made during <a href='http://www.srrngames.com/srrn-seventy-two-the-second-jam/' target='_blank'>SRRN Game Jam #2</a>.<br />Inspired by the randomly-chosen past Ludum Dare themes 'sneaking', 'bouncy'.<br />Click logo to play!",
+        color: [17, 0, 88]
+    });
     Contents.kawa = new Content({
         id: "kawa",
         title: "Kawaii Aishiteru Wormhole Adventure",
