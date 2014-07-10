@@ -11,7 +11,7 @@ $(function() { // have to wait for DOM to load to get templates
         id: "nsn",
         title: "Night Shift Ninja",
         description: "A 2D stealth-action-puzzle game made during <a href='http://www.srrngames.com/srrn-seventy-two-the-second-jam/' target='_blank'>SRRN Game Jam #2</a>.<br />Inspired by the randomly-chosen past Ludum Dare themes 'sneaking', 'bouncy'.<br />Click logo to play!",
-        color: [17, 0, 88]
+        color: [255, 8, 50]
     });
     Contents.kawa = new Content({
         id: "kawa",
