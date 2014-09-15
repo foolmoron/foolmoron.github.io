@@ -7,6 +7,13 @@ $(function() { // have to wait for DOM to load to get templates
         description: "The full source code for all of my non-work projects is hosted on my GitHub!",
         color: [0, 0, 190]
     });
+    Contents.interball = new Content({
+        id: "interball",
+        title: "interball",
+        bannerURL: "img/interballbanner.png",
+        description: "A fast-action rotating pinball game with a constantly warping board, made during <a href='http://www.ludumdare.com/compo/ludum-dare-30/?action=preview&uid=36186' target='_blank'>Ludum Dare 30</a>.<br />Click logo to play!",
+        color: [159, 104, 232]
+    });
     Contents.nsn = new Content({
         id: "nsn",
         title: "Night Shift Ninja",
@@ -29,7 +36,7 @@ $(function() { // have to wait for DOM to load to get templates
     Contents.honeybundles = new Content({
         id: "honeybundles",
         title: "Honey Bundles",
-        description: "A stop-and-go endless runner for <a href='http://www.ludumdare.com/compo/'>Ludum Dare 29</a>'s theme: \"Beneath the Surface\".<br />Developed for the Unity web player entirely by myself.",
+        description: "A stop-and-go endless runner for <a href='http://www.ludumdare.com/compo/ludum-dare-29/?action=preview&uid=36186'>Ludum Dare 29</a>'s theme: \"Beneath the Surface\".<br />Developed for the Unity web player entirely by myself.",
         color: [255, 255, 80]
     });
     Contents.srrn1 = new Content({
