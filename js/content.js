@@ -11,7 +11,7 @@ $(function() { // have to wait for DOM to load to get templates
         id: "interball",
         title: "interball",
         bannerURL: "img/interballbanner.png",
-        description: "A fast-action rotating pinball game with a constantly warping board, made during <a href='http://www.ludumdare.com/compo/ludum-dare-30/?action=preview&uid=36186' target='_blank'>Ludum Dare 30</a>.<br />Click logo to play!",
+        description: "A fast-action rotating pinball game with a constantly warping board, made during <a href='http://www.ludumdare.com/compo/ludum-dare-30/?action=preview&uid=36186' target='_blank'>Ludum Dare 30</a>.",
         color: [159, 104, 232]
     });
     Contents.nsn = new Content({
