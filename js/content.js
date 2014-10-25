@@ -17,7 +17,7 @@ $(function() { // have to wait for DOM to load to get templates
     Contents.nsn = new Content({
         id: "nsn",
         title: "Night Shift Ninja",
-        description: "A 2D stealth-action-puzzle game made during <a href='http://www.srrngames.com/srrn-seventy-two-the-second-jam/' target='_blank'>SRRN Game Jam #2</a>.<br />Inspired by the randomly-chosen past Ludum Dare themes 'sneaking', 'bouncy'.<br />Click logo to play!",
+        description: "A 2D stealth-action-puzzle game made during <a href='http://www.srrngames.com/srrn-seventy-two-the-second-jam/' target='_blank'>SRRN Game Jam #2</a>.<br />Inspired by the randomly-chosen past Ludum Dare themes 'sneaking', 'bouncy'.<br />Use the links to download on your mobile devices, or click the logo to try the web browser demo!",
         color: [255, 8, 50]
     });
     Contents.kawa = new Content({
@@ -30,7 +30,7 @@ $(function() { // have to wait for DOM to load to get templates
     Contents.uncivilize = new Content({
         id: "uncivilize",
         title: "Uncivilize",
-        description: "A 2D action-strategy game made during <a href='http://www.srrngames.com/were-jammin/' target='_blank'>SRRN Game Jam #1</a>.<br />Inspired by the randomly-chosen past Ludum Dare themes 'classic roles reversed', 'atmosphere', and 'all natural'.<br />Click logo to play!",
+        description: "A 2D action-strategy game made during <a href='http://www.srrngames.com/were-jammin/' target='_blank'>SRRN Game Jam #1</a>.<br />Inspired by the randomly-chosen past Ludum Dare themes 'classic roles reversed', 'atmosphere', and 'all natural'.<br />Use the links to download on your mobile devices, or click the logo to try the web browser demo!",
         color: [221, 168, 91]
     });
     Contents.honeybundles = new Content({

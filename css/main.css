@@ -54,6 +54,29 @@
 	font-size: 1.2em;
 }
 
+.appstore-button {
+	display:inline-block;
+	width:203px;
+	height:60px;
+	overflow:hidden;
+	background:url(../img/appstorebutton.svg) no-repeat;
+	background-size:cover;
+	@media only screen {
+		background-image:url(../img/appstorebutton.svg);
+	}
+}
+.android-button {
+	display:inline-block;
+	width:172px;
+	height:60px;
+	overflow:hidden;
+	background:url(../img/androidbutton.png) no-repeat;
+	background-size:cover;
+	@media only screen {
+		background-image:url(../img/androidbutton.png);
+	}	
+}
+
 /* tables */
 table {
 	font-size: 1.25em;
