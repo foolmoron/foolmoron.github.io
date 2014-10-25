@@ -59,10 +59,10 @@
 	width:203px;
 	height:60px;
 	overflow:hidden;
-	background:url(../img/appstorebutton.svg) no-repeat;
+	background:url(../img/appstorebutton.png) no-repeat;
 	background-size:cover;
 	@media only screen {
-		background-image:url(../img/appstorebutton.svg);
+		background-image:url(../img/appstorebutton.png);
 	}
 }
 .android-button {
