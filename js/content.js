@@ -7,6 +7,13 @@ $(function() { // have to wait for DOM to load to get templates
         description: "The full source code for all of my non-work projects is hosted on my GitHub!",
         color: [0, 0, 190]
     });
+    Contents.superresizer = new Content({
+        id: "superresizer",
+        title: "Super Resizer",
+        bannerURL: "img/superresizerbanner.png",
+        description: "Play by resizing your browser to envelop the squares! Made during <a href='http://ludumdare.com/compo/ludum-dare-31/?action=preview&uid=36186' target='_blank'>Ludum Dare 31</a>.",
+        color: [130, 130, 130]
+    });
     Contents.interball = new Content({
         id: "interball",
         title: "interball",
