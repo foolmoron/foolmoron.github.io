@@ -20,6 +20,13 @@ $(function() { // have to wait for DOM to load to get templates
         description: "A colorful 2-4 player couch multiplayer sports game, focused on crazy fun competition with friends and family. Smack the puck into the opponent's goal in a variety of stylized levels filled with obstacles and traps.",
         color: [77, 197, 242]
     });
+    Contents.keytd = new Content({
+        id: "keytd",
+        title: "KeyTD",
+        bannerURL: "img/keytdbanner.png",
+        description: "A keyboard tower defense game where you tap keys to defend yourself from enemies. Won #2 Innovation in the <a href='http://ludumdare.com/compo/ludum-dare-32/?action=preview&uid=36186' target='_blank'>Ludum Dare 32</a> 48-hour competition!",
+        color: [0, 0, 0]
+    });
     Contents.superresizer = new Content({
         id: "superresizer",
         title: "Super Resizer",
