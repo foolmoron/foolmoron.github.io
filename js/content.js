@@ -7,6 +7,19 @@ $(function() { // have to wait for DOM to load to get templates
         description: "The full source code for all of my non-work projects is hosted on my GitHub!",
         color: [0, 0, 190]
     });
+    Contents.root76 = new Content({
+        id: "root76",
+        title: "ROOT 76",
+        bannerURL: "img/root76banner.png",
+        description: "<a href='http://root76.io' target='_blank'>ROOT 76</a> is a company I started after SRRN Games got acquired by Timmons Group, focusing on lean, sustainable indie game development and growing the amazing RVA game dev community.",
+        color: [165, 30, 81]
+    });
+    Contents.cct = new Content({
+        id: "cct",
+        title: "Clash Cup Turbo",
+        description: "A colorful 2-4 player couch multiplayer sports game, focused on crazy fun competition with friends and family. Smack the puck into the opponent's goal in a variety of stylized levels filled with obstacles and traps.",
+        color: [77, 197, 242]
+    });
     Contents.superresizer = new Content({
         id: "superresizer",
         title: "Super Resizer",
