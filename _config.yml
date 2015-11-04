@@ -1,4 +1,7 @@
 # top level stuff you probably don't need to touch
+collections:
+  projects:
+    output: true
 highlighter: pygments
 markdown: rdiscount
 rdiscount:
