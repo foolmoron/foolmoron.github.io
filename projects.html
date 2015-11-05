@@ -10,7 +10,7 @@ title: Projects
     <div class="panel-body">
     {% for project in site.projects %}
       <h4>
-        <i class="fa fa-github"></i>&nbsp;&nbsp;<strong><a href="{{ project.url }}">{{ project.title }}</a></strong>
+        <i class="fa fa-github"></i>&nbsp;&nbsp;<strong><a href="{{ project.url }}">{{ project.weight }} - {{ project.title }}</a></strong>
         {{ project.summary }}
     {% endfor %}
     </div>
