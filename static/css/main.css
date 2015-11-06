@@ -159,6 +159,39 @@ body {
   padding-bottom: 15px;
 }
 
+.project-item {
+  width: 250px;
+  height: 250px;
+  padding: 5px;
+  background: black;
+  opacity: 0.75;
+  background-clip: content-box;
+}
+.width1 {
+  width: 192px;
+}
+.width2 {
+  width: 384px;
+}
+.width3 {
+  width: 576px;
+}
+.width4 {
+  width: 768px;
+}
+.height1 {
+  height: 192px;
+}
+.height2 {
+  height: 384px;
+}
+.height3 {
+  height: 576px;
+}
+.height4 {
+  height: 768px;
+}
+
 /* Footer 
 -------------------------------------------------- */
 

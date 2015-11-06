@@ -2,6 +2,9 @@
 layout: project
 title: Super Resizer
 summary: "Play by resizing your browser to envelop the squares! Made during <a href='http://ludumdare.com/compo/ludum-dare-31/?action=preview&uid=36186' target='_blank'>Ludum Dare 31</a>."
+weight: 2
+width: 1
+height: 1
 ---
 
 # Test what

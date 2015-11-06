@@ -2,6 +2,9 @@
 layout: project
 title: Retroverse
 summary: "My first complete game! A 1P/2P roguelike with lots of powerups and levels.<br />Made at the UVA SGD with a team of 7ish."
+weight: 2
+width: 3
+height: 1
 ---
 
 # Test what

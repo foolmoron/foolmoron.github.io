@@ -2,6 +2,9 @@
 layout: project
 title: interball
 summary: "A fast-action rotating pinball game with a constantly warping board, made during <a href='http://www.ludumdare.com/compo/ludum-dare-30/?action=preview&uid=36186' target='_blank'>Ludum Dare 30</a>."
+weight: 3
+width: 1
+height: 1
 ---
 
 # Test what

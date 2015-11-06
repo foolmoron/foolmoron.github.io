@@ -2,6 +2,9 @@
 layout: project
 title: Night Shift Ninja
 summary: "A 2D stealth-action-puzzle game made during <a href='http://www.srrngames.com/srrn-seventy-two-the-second-jam/' target='_blank'>SRRN Game Jam #2</a>.<br />Inspired by the randomly-chosen past Ludum Dare themes 'sneaking', 'bouncy'.<br />Use the links to download on your mobile devices, or click the logo to try the web browser demo!"
+weight: 4
+width: 2
+height: 1
 ---
 
 # Test what

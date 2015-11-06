@@ -2,6 +2,9 @@
 layout: project
 title: Honey Bundles
 summary: "A stop-and-go endless runner for <a href='http://www.ludumdare.com/compo/ludum-dare-29/?action=preview&uid=36186'>Ludum Dare 29</a>'s theme: 'Beneath the Surface'.<br />Developed for the Unity web player entirely by myself."
+weight: 2
+width: 1
+height: 1
 ---
 
 # Test what

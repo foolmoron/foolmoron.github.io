@@ -2,6 +2,9 @@
 layout: project
 title: SRRN Vita Platformer
 summary: "An unreleased platformer I worked on at SRRN Games using the Unity Vita plugin."
+weight: 2
+width: 2
+height: 2
 ---
 
 # Test what

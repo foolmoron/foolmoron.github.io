@@ -2,6 +2,9 @@
 layout: project
 title: Kawaii Aishiteru Wormhole Adventure
 summary: "A dating sim made for <a href='http://fuckthisjam.com/' target='_blank'>Fuck This Jame 2014</a>.<br />The goal was to make a game in a genre that you hate and/or know nothing about."
+weight: 3
+width: 2
+height: 2
 ---
 
 # Test what
