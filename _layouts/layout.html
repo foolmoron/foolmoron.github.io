@@ -63,7 +63,11 @@
   <!-- Wrap all page content here -->
   <div id="wrap">
     <!-- Navbar header -->
-    {% include header.html %}
+    {% if page.noheader %}
+    {% else %}
+      {% include header.html %}
+    }
+    {% endif %}
 
     {{ content }}
 
