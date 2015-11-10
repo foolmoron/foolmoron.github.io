@@ -5,7 +5,7 @@ summary: "A 2D action-strategy game made during <a href='http://www.srrngames.co
 logo: uncivilizebanner.png
 color: rgb(221, 168, 91)
 weight: 3
-width: 1
+width: 2
 height: 1
 ---
 

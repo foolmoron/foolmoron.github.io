@@ -5,8 +5,8 @@ summary: "<a href='http://root76.io' target='_blank'>ROOT 76</a> is a company I 
 logo: root76logo.png
 color: rgb(165, 30, 81)
 weight: 5
-width: 2
-height: 2
+width: 3
+height: 3
 ---
 
 # Test what

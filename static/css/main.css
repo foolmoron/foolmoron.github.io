@@ -159,12 +159,7 @@ body {
   padding-bottom: 15px;
 }
 
-.project-grid-sizer {
-  width: 25%;
-  padding-bottom: 25%;
-}
 .project-item {
-  background-image: url('../img/cctlogo.png');
   background-size: 100%;
   background-repeat: no-repeat;
   background-position: center;
@@ -176,27 +171,33 @@ body {
   -webkit-filter: grayscale(1);
 }
 .width1 {
-  width: 25%;
+  width: 20%;
 }
 .width2 {
-  width: 50%;
+  width: 40%;
 }
 .width3 {
-  width: 75%;
+  width: 60%;
 }
 .width4 {
+  width: 80%;
+}
+.width5 {
   width: 100%;
 }
 .height1 {
-  padding-bottom: 25%;
+  padding-bottom: 20%;
 }
 .height2 {
-  padding-bottom: 50%;
+  padding-bottom: 40%;
 }
 .height3 {
-  padding-bottom: 75%;
+  padding-bottom: 60%;
 }
 .height4 {
+  padding-bottom: 80%;
+}
+.height5 {
   padding-bottom: 100%;
 }
 
