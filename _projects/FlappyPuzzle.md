@@ -2,6 +2,7 @@
 layout: project
 title: Flappy Puzzle
 summary: "A touch-based game made for the <a href='http://itch.io/jam/flappyjam' target='_blank'>Flappy Jam</a>.<br />Graphics inspired by Tetris, difficulty and controls inspired by Flappy Bird."
+logo: flappypuzzlebanner.png
 weight: 2
 width: 1
 height: 1

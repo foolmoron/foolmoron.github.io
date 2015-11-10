@@ -159,37 +159,45 @@ body {
   padding-bottom: 15px;
 }
 
+.project-grid-sizer {
+  width: 25%;
+  padding-bottom: 25%;
+}
 .project-item {
-  width: 250px;
-  height: 250px;
-  padding: 5px;
-  background: black;
-  opacity: 0.75;
-  background-clip: content-box;
+  background-image: url('../img/cctlogo.png');
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  transition: 0.4s opacity, 0.4s filter, 0.4s -webkit-filter;
+}
+.project-item.gray {
+  filter: gray;
+  filter: grayscale(1);
+  -webkit-filter: grayscale(1);
 }
 .width1 {
-  width: 192px;
+  width: 25%;
 }
 .width2 {
-  width: 384px;
+  width: 50%;
 }
 .width3 {
-  width: 576px;
+  width: 75%;
 }
 .width4 {
-  width: 768px;
+  width: 100%;
 }
 .height1 {
-  height: 192px;
+  padding-bottom: 25%;
 }
 .height2 {
-  height: 384px;
+  padding-bottom: 50%;
 }
 .height3 {
-  height: 576px;
+  padding-bottom: 75%;
 }
 .height4 {
-  height: 768px;
+  padding-bottom: 100%;
 }
 
 /* Footer 

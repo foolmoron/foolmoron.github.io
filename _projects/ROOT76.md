@@ -2,6 +2,7 @@
 layout: project
 title: ROOT 76
 summary: "<a href='http://root76.io' target='_blank'>ROOT 76</a> is a company I started after SRRN Games got acquired by Timmons Group, focusing on lean, sustainable indie game development and growing the amazing RVA game dev community."
+logo: root76logo.png
 weight: 5
 width: 2
 height: 2

@@ -2,6 +2,7 @@
 layout: project
 title: Clash Cup Turbo
 summary: "A colorful 2-4 player couch multiplayer sports game, focused on crazy fun competition with friends and family. Smack the puck into the opponent's goal in a variety of stylized levels filled with obstacles and traps."
+logo: cctlogo.png
 weight: 5
 width: 2
 height: 2

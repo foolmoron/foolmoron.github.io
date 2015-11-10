@@ -2,6 +2,7 @@
 layout: project
 title: Stormwater Sentries
 summary: "An HTML5 educational resource management browser game about reducing stormwater runoff on your property.<br />Developed at SRRN Games in collaboration with local Virginia organizations.<br />Click logo to play!"
+logo: swsbanner.png
 weight: 3
 width: 2
 height: 2

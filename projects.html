@@ -9,9 +9,14 @@ title: Projects
   <div class="project-grid" style="max-width: 1000px;">
     <div class="project-grid-sizer width1 height1"></div>
     {% for project in site.projects %}
-      <div class="project-item width{{ project.width }} height{{ project.height }}" data-sort-index={{ 100 | minus:project.weight }}>
-        <strong><a href="{{ project.url }}">{{ project.weight }} - {{ project.title }}</a></strong>
-      </div>
+      <a href="{{ project.url }}">
+        <div 
+          class="project-item width{{ project.width }} height{{ project.height }}" 
+          data-sort-index={{ 100 | minus:project.weight }}
+          style="background-image: url('{{ site.baseurl }}static/img/{{ project.logo }}');"
+          >
+        </div>
+      </a>
     {% endfor %}
   </div>
 </div>

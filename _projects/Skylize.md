@@ -2,6 +2,7 @@
 layout: project
 title: Skylize
 summary: "An experiment with a velocity-based touch control system, made for the <a href='http://itch.io/jam/cyberpunk-jam' target='_blank'>Cyberpunk Jam</a>.<br />Paint the black sky with neon lights and share your creation."
+logo: skylizebanner.png
 weight: 2
 width: 1
 height: 1

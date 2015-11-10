@@ -2,6 +2,7 @@
 layout: project
 title: City Quake
 summary: "My first touch-based web game. An action-puzzle game where you destroy a city with earthquakes.<br />Made in Construct 2 for the Newgrounds <a href='http://www.newgrounds.com/collection/construct2touchjam' target='_blank'>Construct 2 Jam</a>."
+logo: cityquakebanner.png
 weight: 1
 width: 2
 height: 1
@@ -10,6 +11,7 @@ height: 1
 # Test what
 ## Yeah
 
+```html
     <p>
       <a href="http://www.newgrounds.com/portal/view/616600" title="Play City Quake on Newgrounds" target="_blank">
         <img src="img/cityquakeplaynow.png" style="max-height: 60px;">
@@ -24,3 +26,4 @@ height: 1
       <li>Director</li>
       <li>All programming and design</li>
     </ul>
+```
