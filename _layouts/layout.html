@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta name="author" content="{{ site.author }}" />
+    <meta name="author" content="{{ site.author }}" />
     <meta name="description" content="{{ site.description }}">
     <link rel="favicon" href="{{ site.baseurl }}static/img/favicon.ico">
 
@@ -13,7 +13,7 @@
     {% else %}
       <title>{{ site.title }}</title>
     {% endif %}
-	
+  
     <!-- Bootstrap -->
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha256-MfvZlkHCEqatNoGiOXveE8FIwMzZg4W85qfrfIFBfYc= sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ=="
@@ -26,11 +26,34 @@
       <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
 
-	<!-- Custom styles for this template -->
+    <!-- Custom styles for this template -->
     <link href="{{ site.baseurl }}static/css/main.css" rel="stylesheet">
-	<link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,400,200bold,400old" rel="stylesheet" type="text/css">
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
-	<link href="{{ site.baseurl }}static/css/bootstrap.icon-large.min.css" rel="stylesheet">
+    <link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,400,200bold,400old" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link href="{{ site.baseurl }}static/css/bootstrap.icon-large.min.css" rel="stylesheet">
+
+    <!-- Overwrite colors based on page color -->
+    <style>
+      html,
+      body {
+        border-top-color: {{ page.color }};
+      }
+      .container a {
+        color: {{ page.color }};
+      }
+      .container a:hover {
+        color: {{ page.color }};
+      }
+      .panel-default h4 a, h5 a {
+        color: {{ page.color }};
+      }
+      .panel-default h4 a:hover, h5 a:hover {
+        color: {{ page.color }};
+      }
+      div.footer{
+        border-bottom-color: {{ page.color }};
+      }
+    </style>
 
     <!-- Google Analytics -->
     {% include analytics.html %}

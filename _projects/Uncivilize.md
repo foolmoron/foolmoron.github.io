@@ -3,6 +3,7 @@ layout: project
 title: Uncivilize
 summary: "A 2D action-strategy game made during <a href='http://www.srrngames.com/were-jammin/' target='_blank'>SRRN Game Jam #1</a>.<br />Inspired by the randomly-chosen past Ludum Dare themes 'classic roles reversed', 'atmosphere', and 'all natural'.<br />Use the links to download on your mobile devices, or click the logo to try the web browser demo!"
 logo: uncivilizebanner.png
+color: rgb(221, 168, 91)
 weight: 3
 width: 1
 height: 1

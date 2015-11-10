@@ -11,6 +11,12 @@ paginate: 5
 port: 3000
 safe: true
 
+defaults:
+  -
+    scope:
+      path: "" # an empty string here means all files in the project
+    values:
+      color: rgb(251, 151, 45)
 
 # edit here to achieve your personal greatness
 url: http://foolmoron.io/

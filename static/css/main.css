@@ -210,11 +210,5 @@ body {
 	color: #6b6b6b;
 }
 div.footer{
-  border-bottom: 5px solid #FB972D;;
+  border-bottom: 5px solid #FB972D;
 }
-/* Set the fixed height of the footer here */
-/*.footer {
-  height: 50px;
-  padding-bottom: 15px;
-  
-}*/
