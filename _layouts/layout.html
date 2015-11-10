@@ -66,7 +66,6 @@
     {% if page.noheader %}
     {% else %}
       {% include header.html %}
-    }
     {% endif %}
 
     {{ content }}
@@ -82,7 +81,7 @@
     integrity="sha256-Sk3nkD6mLTMOF0EOpNtsIry+s1CsaqQC1rVLTAy+0yc= sha512-K1qjQ+NcF2TYO/eI3M6v8EiNYZfA95pQumfvcVrTHtwQVDG+aHRqLi/ETn2uB+1JqwYqVG3LIvdm9lj6imS/pQ=="
     crossorigin="anonymous"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery.isotope/2.2.2/isotope.pkgd.min.js"></script>
+    <script src="{{ site.baseurl }}static/js/isotope.pkgd.min.js"></script>
     <script src="{{ site.baseurl }}static/js/masonry-horizontal.js"></script>
     <script src="{{ site.baseurl }}static/js/docs.min.js"></script>
     <script src="{{ site.baseurl }}static/js/main.js"></script>
