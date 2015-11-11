@@ -31,7 +31,7 @@ title: Words
 				</div>
 				<div class="col-sm-3 col-xs-12">
 					<h5 class="blog-tags">
-						{% for tag in post.tags %}<span class="label tag-{{ tag | replace:' ','_' }}">{{ tag }}</span>{% endfor %}
+						{% for tag in post.tags %}<span class="label tag-{{ tag | replace:' ','_' }}"><a href="{{ site.baseurl }}words.html#{{ tag }}">{{ tag }}</a></span>{% endfor %}
 					</h5>
 				</div>
 			</div>

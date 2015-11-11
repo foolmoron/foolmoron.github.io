@@ -13,7 +13,7 @@ layout: layout
 		{{ page.date | date: "%B %e, %Y" }}
 			&nbsp;&nbsp;
 			{% for tag in page.tags %}
-				<span class="label tag-{{ tag }}">{{ tag }}</span>
+				<span class="label tag-{{ tag | replace:" ","_" }}"><a href="{{ site.baseurl }}words.html#{{ tag }}">{{ tag }}</a></span>
 			{% endfor %}
 		</h4>
 	</div>

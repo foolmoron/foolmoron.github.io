@@ -109,6 +109,12 @@ body {
 .container a:hover {
   color: #fb972d;
 }
+.container .label a {
+  color: white;
+}
+.container .label a:hover {
+  color: white;
+}
 .img-responsive {
  display: block;
  height: auto;
