@@ -29,7 +29,7 @@
       $(e.currentTarget).removeClass('gray');
       $(e.currentTarget).addClass('hover'); // force hover
     });
-    projectItems.on('mouseoout touchend', function(e) {
+    projectItems.on('mouseout touchend', function(e) {
       $(e.currentTarget).removeClass('hover'); // force unhover
       // debounce color restoration so we know that no for sure no other item has been moused over
       clearTimeout(restoreColorTimeout);
