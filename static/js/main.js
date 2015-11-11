@@ -12,3 +12,5 @@ jQuery(document).ready(function(e) {
 });
 
 
+/* Rest of the code by @foolmoron */
+$(window).on('load', function() { $('.show-on-load').show(); })
