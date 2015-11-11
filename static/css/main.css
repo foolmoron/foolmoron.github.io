@@ -28,6 +28,7 @@ body {
 .navbar-default {
   background-color: #ffffff;
   border-color: #ffffff;
+  font-size: 18px;
 }
 .navbar-default .navbar-brand {
   color: #6b6b6b;
@@ -136,11 +137,11 @@ body {
 }
 .social {
   text-align: center;
-  padding-top: 12px;
-  word-spacing: 25px;
+  padding-top: 14px;
+  word-spacing: 18px;
 }
 .social h4 > a {
-  color: #000000;
+  color: #6B6B6B;
 }
 .avatar {
   padding-top: 5%;
