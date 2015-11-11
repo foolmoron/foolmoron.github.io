@@ -58,6 +58,15 @@
       }
     </style>
 
+    <!-- Auto-generate tag colors for projects -->
+    <style>
+      {% for project in site.projects %}
+        .tag-{{ project.title | replace:' ','_' }} {
+          background-color: {{ project.color }};
+        }
+      {% endfor %}
+    </style>
+
     <!-- Google Analytics -->
     {% include analytics.html %}
   </head>
