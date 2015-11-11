@@ -132,6 +132,8 @@ body {
 }
 .panel{
   border-style: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
 }
 .panel-body {
   padding-top: -10px;
