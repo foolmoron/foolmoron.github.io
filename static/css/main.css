@@ -187,6 +187,8 @@ body {
 }
 .tag-filter .label.active {
   opacity: 1;
+  box-shadow: inset 1px 1px 0px 0px #6b6b6b, inset -1px -1px 0px 0px #6b6b6b;
+  -webkit-box-shadow: inset 1px 1px 0px 0px #6b6b6b, inset -1px -1px 0px 0px #6b6b6b;
 }
 .tag-filter .label.active:hover {
   opacity: 0.85;
