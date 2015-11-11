@@ -229,7 +229,7 @@ body {
   background-position: center;
   transition: 0.4s filter, 0.4s -webkit-filter, 0.4s transform, 0.4s -webkit-transform;
 }
-.project-item:hover {
+.project-item:hover, .project-item.hover {
   filter: grayscale(0) drop-shadow(0px 0px 7px rgba(0,0,0,1));
   -webkit-filter: grayscale(0) drop-shadow(0px 0px 7px rgba(0,0,0,1));
   animation-name: pulse;

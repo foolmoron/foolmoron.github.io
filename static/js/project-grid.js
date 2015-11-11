@@ -23,12 +23,14 @@
   {
     var restoreColorTimeout;
     projectItems = $('.project-item', grid);
-    projectItems.mouseover(function(e) {
+    projectItems.on('mouseover touchstart', function(e) {
       clearTimeout(restoreColorTimeout);
       projectItems.addClass('gray');
       $(e.currentTarget).removeClass('gray');
+      $(e.currentTarget).addClass('hover'); // force hover
     });
-    projectItems.mouseout(function(e) {
+    projectItems.on('mouseoout touchend', function(e) {
+      $(e.currentTarget).removeClass('hover'); // force unhover
       // debounce color restoration so we know that no for sure no other item has been moused over
       clearTimeout(restoreColorTimeout);
       restoreColorTimeout = setTimeout(function() {
