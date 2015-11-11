@@ -93,6 +93,9 @@ body {
   max-width: 800px;
   text-align: center;
 }
+.container.wide {
+  max-width: 1200px;
+}
 .container .text-muted {
   margin-top: 5px;
   margin-bottom: 20px;
@@ -115,7 +118,6 @@ body {
   font-size: 18px;
 }
 .panel-default h5 {
-  text-align: left;
   line-height: 30px;
   font-size: 18px;
 }
@@ -162,6 +164,36 @@ body {
   padding-bottom: 15px;
 }
 
+/* Tags 
+-------------------------------------------------- */
+.tag-News { background-color: #FF4A4A; }
+.tag-Tags { background-color: #447DFF; }
+.tag-Blog { background-color: #25BFA0; }
+.tag-Post { background-color: #C63AD3; }
+.tag-Blah_You_Know { background-color: #E9923E; }
+
+/* Blog list
+-------------------------------------------------- */
+.blog-hr {
+  display: none;
+  border-color: #c5c5c5;
+}
+.blog-tags .label {
+  margin-right: 3px;
+}
+@media only screen and (max-width : 767px) {
+  .blog-hr {
+    display: block;
+  }
+  .blog-tags {
+      text-align: center;
+      margin-top: -10px;
+
+  }
+}
+
+/* Project grid
+-------------------------------------------------- */
 .project-item {
   background-size: 100%;
   background-repeat: no-repeat;
