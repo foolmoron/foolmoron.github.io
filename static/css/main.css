@@ -6,7 +6,7 @@ body {
   background-color: #fff;
   font-family: 'Source Sans Pro', sans-serif;
   /* The html and body elements cannot have any padding or margin. */
-  border-top: 3px solid #FB972D;
+  border-top: 3px solid #fb972d;
 }
 /* Wrapper for page content to push down footer */
 #wrap {
@@ -34,7 +34,7 @@ body {
   color: #6b6b6b;
 }
 .navbar-default .navbar-brand:hover, .navbar-default .navbar-brand:focus {
-  color: #FB972D;
+  color: #fb972d;
 }
 .navbar-default .navbar-text {
   color: #6b6b6b;
@@ -43,7 +43,7 @@ body {
   color: #6b6b6b;
 }
 .navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
-  color: #FB972D;
+  color: #fb972d;
 }
 .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
   color: #6b6b6b;
@@ -101,10 +101,10 @@ body {
   margin-bottom: 20px;
 }
 .container a {
-  color: #FB972D;
+  color: #fb972d;
 }
 .container a:hover {
-  color: #FB972D;
+  color: #fb972d;
 }
 .img-responsive {
  display: block;
@@ -125,10 +125,10 @@ body {
   font-size: 15px;
 }
 .panel-default h4 a, h5 a {
-  color: #FB972D;
+  color: #fb972d;
 }
 .panel-default h4 a:hover, h5 a:hover {
-  color: #FB972D;
+  color: #fb972d;
 }
 .panel{
   border-style: none;
@@ -290,5 +290,5 @@ footer {
 	color: #6b6b6b;
 }
 div.footer{
-  border-bottom: 5px solid #FB972D;
+  border-bottom: 5px solid #fb972d;
 }
