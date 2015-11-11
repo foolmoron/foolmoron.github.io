@@ -1,7 +1,13 @@
 <nav class="navbar navbar-default">
   <div class="container">
     <div class="navbar-header">
-      <a class="navbar-brand" href="{{ site.baseurl }}"><i class="fa fa-home"></i> Momin Khan</a>
+      <a class="navbar-brand" href="{{ site.baseurl }}"><i id="random-home-icon" class="fa fa-home"></i> Momin Khan</a>
+      <script>
+        (function() {
+          var iconClasses = ['home','heart','gamepad','bolt','diamond','gear','btc','beer','rocket','magic','globe','cutlery'];
+          document.getElementById('random-home-icon').className = 'fa fa-' + iconClasses[Math.floor(Math.random()*iconClasses.length)];
+        })()
+      </script>
     </div>
     <div id="navbar">
       <ul class="nav navbar-nav navbar-right">
