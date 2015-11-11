@@ -34,7 +34,7 @@ body {
   color: #6b6b6b;
 }
 .navbar-default .navbar-brand:hover, .navbar-default .navbar-brand:focus {
-  color: #6b6b6b;
+  color: #FB972D;
 }
 .navbar-default .navbar-text {
   color: #6b6b6b;
@@ -43,7 +43,7 @@ body {
   color: #6b6b6b;
 }
 .navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
-  color: #6b6b6b;
+  color: #FB972D;
 }
 .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
   color: #6b6b6b;
