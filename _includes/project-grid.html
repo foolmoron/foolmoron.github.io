@@ -1,0 +1,23 @@
+<div class="project-grid" style="max-width: 1000px;">
+  <div class="project-grid-sizer width1 height1"></div>
+  {% assign sorted_projects = site.projects | sort:"weight" %}
+  {% assign i = 0 %}
+  {% for project in sorted_projects reversed %}
+    {% if i < include.project_grid_limit %}
+      <a href="{{ project.url }}">
+        <div 
+          {% if include.small_items %}
+            class="project-item widthsmall{{ project.width }} heightsmall{{ project.height }}"
+          {% else %}
+            class="project-item width{{ project.width }} height{{ project.height }}"
+          {% endif %}
+          data-sort-index={{ 100 | minus:project.weight }}
+          style="background-image: url('{{ site.baseurl }}static/img/{{ project.logo }}');"
+          >
+        </div>
+      </a>
+      {% assign w = project.width | times:project.width %}
+      {% assign i = i | plus:w %}
+    {% endif %}
+  {% endfor %}
+</div>

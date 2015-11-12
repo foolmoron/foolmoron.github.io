@@ -1,9 +1,14 @@
 (function() {
   var grid, projectItems;
+  grid = $('.project-grid');
+
+  // ditch if this script doesn't apply
+  if (!grid.length) {
+    return;
+  }
 
   // setup grid
   {
-    grid = $('.project-grid');
     grid.isotope({
       itemSelector: '.project-item',
 

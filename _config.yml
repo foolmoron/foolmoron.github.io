@@ -18,6 +18,17 @@ defaults:
     values:
       color: rgb(251, 151, 45)
 
+# not sure where else to put this...
+friends:
+-
+  name: "Test 1"
+  url: "www.google.com"
+  description: "Test is a pretty cool guy."
+-
+  name: "Mike Odum"
+  url: "www.google.com"
+  description: "The ROOT 76 art director and freelance illustrator extraordinaire!"
+
 # edit here to achieve your personal greatness
 url: http://foolmoron.io/
 baseurl: /

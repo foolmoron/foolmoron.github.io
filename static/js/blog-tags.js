@@ -2,6 +2,11 @@
   var tagFilters, taggedItems;
   tagFilters = $('[data-tag]');
   taggedItems = $('[data-tags]');
+
+  // ditch if this script doesn't apply
+  if (!tagFilters.length || !taggedItems.length) {
+    return;
+  }
   
   // setup tag filtering
   {

@@ -18,6 +18,10 @@ body {
   /* Pad bottom by footer height */
   /*padding: 0 0 60px;*/
 }
+section {
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
 .show-on-load {
   display: none;
 }
@@ -145,7 +149,6 @@ body {
   box-shadow: none;
 }
 .panel-body {
-  padding-top: -10px;
   text-align: left;
 }
 .social {
@@ -270,6 +273,36 @@ body {
 }
 .height5 {
   padding-bottom: 100%;
+}
+.widthsmall1 {
+  width: 12.5%;
+}
+.widthsmall2 {
+  width: 25.0%;
+}
+.widthsmall3 {
+  width: 37.5%;
+}
+.widthsmall4 {
+  width: 50.0%;
+}
+.widthsmall5 {
+  width: 62.5%;
+}
+.heightsmall1 {
+  padding-bottom: 12.5%;
+}
+.heightsmall2 {
+  padding-bottom: 25.0%;
+}
+.heightsmall3 {
+  padding-bottom: 37.5%;
+}
+.heightsmall4 {
+  padding-bottom: 50.0%;
+}
+.heightsmall5 {
+  padding-bottom: 62.5%;
 }
 
 @keyframes pulse {

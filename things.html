@@ -6,18 +6,6 @@ title: Things
 <section id="projects">
 <div class="container">
   <h3>Things I've Done</h3>
-  <div class="project-grid" style="max-width: 1000px;">
-    <div class="project-grid-sizer width1 height1"></div>
-    {% for project in site.projects %}
-      <a href="{{ project.url }}">
-        <div 
-          class="project-item width{{ project.width }} height{{ project.height }}" 
-          data-sort-index={{ 100 | minus:project.weight }}
-          style="background-image: url('{{ site.baseurl }}static/img/{{ project.logo }}');"
-          >
-        </div>
-      </a>
-    {% endfor %}
-  </div>
+  {% include project-grid.html project_grid_limit=99999 %}
 </div>
 </section>

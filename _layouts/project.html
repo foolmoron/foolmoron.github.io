@@ -7,6 +7,9 @@ layout: layout
     <h3>
       <strong><a href="{{ page.url }}">{{ page.title }}</a></strong>
     </h3>
+    <h4>
+      Related posts: <a href="{{ site.baseurl }}words.html#{{ page.title }}"><span class="label tag-{{ page.title | replace:' ','_' }}" data-tag="{{ page.title }}">{{ page.title }}</span></a>
+    </h4>
   </div>
   <div class="panel panel-default">
     <div class="panel-body">
