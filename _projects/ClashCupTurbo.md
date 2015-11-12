@@ -11,12 +11,12 @@ height: 2
 
 <p><a href='http://clashcupturbo.com' target='_blank'>Clash Cup Turbo website</a></p>
 
-<h4>Platform: TBD (likely PC, Mac, Consoles)</h4>
-<h4>Development: On-going since Summer 2014</h4>
-<h4>Team: 2 core + 2-3 collaborators</h4>
-<h4>My Role:</h4>
-<ul class="role">
-  <li>All programming</li>
-  <li>Some design</li>
-  <li>Publisher & press interaction</li>
-</ul>
+Platform: TBD (likely PC, Mac, Consoles)  
+Development: On-going since Summer 2014  
+Team: 2 core + 2-3 collaborators  
+My Role:  
+  
+* All programming  
+* Some design  
+* Publisher & press interaction  
+  

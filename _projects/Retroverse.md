@@ -18,12 +18,12 @@ height: 1
   </a>
 </p>
 
-<h4>Platform: XNA deployed to Windows
-<h4>Development: A fraction of 9 months</h4>
-<h4>Team: ~7</h4>
-<h4>My Role:</h4>
-<ul class="role">
-  <li>Director</li>
-  <li>Most programming and design</li>
-  <li>Tools for level design</li>
-</ul>
+Platform: XNA deployed to Windows  
+Development: A fraction of 9 months  
+Team: ~7  
+My Role:  
+  
+* Director  
+* Most programming and design  
+* Tools for level design  
+  

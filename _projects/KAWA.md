@@ -12,12 +12,11 @@ height: 2
 <iframe src="//itch.io/embed/8346?linkback=true" 
   width="552" height="167" frameborder="0"></iframe>
   
-<h4>Platform: <a href="http://phaser.io/" target="_blank">Phaser</a> HTML5 engine for desktop and mobile browsers</</h4>
-<h4>Development: A fraction of 1 week</h4>
-<h4>Team: 3</h4>
-<h4>My Role:</h4>
-<ul class="role">
-  <li>All programming and design</li>
-  <li>All writing (unfortunately)</li>
-  <li>Non-character art</li>
-</ul>
+Platform: <a href="http://phaser.io/" target="_blank">Phaser</a> HTML5 engine for desktop and mobile browsers  
+Development: A fraction of 1 week  
+Team: 3  
+My Role:  
+
+* All programming and design
+* All writing (unfortunately)
+* Non-character art

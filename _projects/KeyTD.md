@@ -12,10 +12,10 @@ height: 1
 <iframe src="//itch.io/embed/23607?linkback=true" 
   width="552" height="167" frameborder="0"></iframe>
   
-<h4>Platform: Unity Web Player or WebGL</h4>
-<h4>Development: 48 hours</h4>
-<h4>Team: 1</h4>
-<h4>My Role:</h4>
-<ul class="role">
-  <li>Everything!</li>
-</ul>
+Platform: Unity Web Player or WebGL  
+Development: 48 hours  
+Team: 1  
+My Role:  
+  
+* Everything!  
+  

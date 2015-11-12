@@ -12,11 +12,11 @@ height: 1
 <iframe src="//itch.io/embed/2595?linkback=true" 
   width="552" height="167" frameborder="0"></iframe>
   
-<h4>Platform: <a href='http://www.isogenicengine.com/' target='_blank'>Isogenic Engine</a> (HTML5) aimed at all browsers</h4>
-<h4>Development: 12 hours</h4>
-<h4>Team: 1</h4>
-<h4>My Role:</h4>
-<ul class="role">
-  <li>All design, programming, and art</li>
-  <li>(music by Joshua Cipolla + open-source sounds)</li>
-</ul>
+Platform: <a href='http://www.isogenicengine.com/' target='_blank'>Isogenic Engine</a> (HTML5) aimed at all browsers  
+Development: 12 hours  
+Team: 1  
+My Role:  
+  
+* All design, programming, and art  
+* (music by Joshua Cipolla + open-source sounds)  
+  

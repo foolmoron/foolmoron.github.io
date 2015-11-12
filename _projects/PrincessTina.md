@@ -12,12 +12,12 @@ height: 1
 <iframe src="//itch.io/embed/4365?linkback=true" 
   width="552" height="167" frameborder="0"></iframe>
   
-<h4>Platform: Unity deployed to web browser</h4>
-<h4>Development: 48 hours</h4>
-<h4>Team: 7</h4>
-<h4>My Role:</h4>
-<ul class="role">
-  <li>Technical Lead (whatever that means)</li>
-  <li>Tools for level design</li>
-  <li>Animation programming</li>
-</ul>
+Platform: Unity deployed to web browser  
+Development: 48 hours  
+Team: 7  
+My Role:  
+  
+* Technical Lead (whatever that means)  
+* Tools for level design  
+* Animation programming  
+  

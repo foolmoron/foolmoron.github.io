@@ -14,12 +14,12 @@ height: 1
   <a href="https://play.google.com/store/apps/details?id=com.srrn.uncivilize" target="_blank" class="android-button"></a>
 </p>
     
-<h4>Platform: Unity deployed to web browser, iOS, and Android</h4>
-<h4>Development: 72ish hours</h4>
-<h4>Team: 3</h4>
-<h4>My Role:</h4>
-<ul class="role">
-  <li>All programming</li>
-  <li>Game design (along with the rest of SRRN)</li>
-  <li>Some technical art</li>
-</ul>
+Platform: Unity deployed to web browser, iOS, and Android  
+Development: 72ish hours  
+Team: 3  
+My Role:  
+  
+* All programming  
+* Game design (along with the rest of SRRN)  
+* Some technical art  
+  

@@ -11,13 +11,13 @@ height: 2
 
 <p><a href='http://www.srrngames.com/' target='_blank'>SRRN website</a></p>
 
-<h4>Platform: Unity deployed to Playstation Vita</h4>
-<h4>Development: ~3 months</h4>
-<h4>Team: ~9</h4>
-<h4>My Role:</h4>
-<ul class="role">
-  <li>Gameplay programming</li>
-  <li>Animation programming</li>
-  <li>Physics programming</li>
-  <li>Enemy/Boss AI and scripting</li>
-</ul>
+Platform: Unity deployed to Playstation Vita  
+Development: ~3 months  
+Team: ~9  
+My Role:  
+  
+* Gameplay programming  
+* Animation programming  
+* Physics programming  
+* Enemy/Boss AI and scripting  
+  
