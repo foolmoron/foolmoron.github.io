@@ -2,6 +2,7 @@
   <div class="container">
     <div class="navbar-header">
       <a class="navbar-brand" href="{{ site.baseurl }}"><i id="random-home-icon" class="fa fa-home" style="margin-right: 3px; vertical-align: bottom;"></i> Momin Khan</a>
+      <div class="visible-xs">{% include social.html %}</div>
       <script>
         (function() {
           var iconClasses = ['home','heart','gamepad','bolt','diamond','gear','btc','beer','rocket','magic','globe','cutlery'];
@@ -18,6 +19,6 @@
         <li><a href="https://docs.google.com/document/d/108EfkRGzHusQ_7XDhnE-KBdy8EJB1w6-PkPNxsh5ss0/edit?usp=sharing" target="_blank">RESUME</a></li>
       </ul>
     </div>
-    {% include social.html %}
+    <div class="hidden-xs visible-sm visible-md visible-lg">{% include social.html %}</div>
   </div>
 </nav>
