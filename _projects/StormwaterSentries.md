@@ -6,7 +6,7 @@ logo: swsbanner.png
 color: rgb(0, 180, 255)
 weight: 3
 width: 2
-height: 2
+height: 1
 ---
 
 <p><a href='https://www.facebook.com/stormwatersentriesgame' target='_blank'>Play Stormwater Sentries on Facebook!</a></p>
