@@ -1,0 +1,21 @@
+---
+layout: project
+title: Clickacabra
+summary: "A chupacabra-based clicker game for Ludum Dare 34"
+logo: clickacabralogo.png
+color: rgb(110, 70, 0)
+weight: 2
+width: 2
+height: 2
+---
+
+<iframe src="//itch.io/embed/34298?linkback=true" 
+  width="552" height="167" frameborder="0"></iframe>
+
+Platform: HaxeFlixel exported to Flash  
+Development: 48 hours  
+Team: 1  
+My Role:  
+  
+* Everything!  
+  
