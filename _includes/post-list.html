@@ -13,7 +13,7 @@
         </div>
       </div>
     {% endif %}
-    <hr class="blog-hr" />
+    <hr class="visible-xs hidden-sm" />
     {% for post in site.posts limit:include.post_list_limit %}
       <div class="row" data-tags="{% for tag in post.tags %}{{ tag }}{% endfor %}">
         <div class="col-sm-3 col-xs-4">
@@ -33,7 +33,7 @@
         </div>
       </div>
       <div class="blog-hr-wrapper" data-tags="{% for tag in post.tags %}{{ tag }}{% endfor %}">
-        <hr class="blog-hr" />
+        <hr class="visible-xs hidden-sm" />
       </div>
     {% endfor %}
   </div>

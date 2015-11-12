@@ -19,11 +19,19 @@ body {
   /*padding: 0 0 60px;*/
 }
 section {
-  margin-top: 100px;
-  margin-bottom: 100px;
+  margin-top: 50px;
+}
+hr {
+  border-color: #c5c5c5;
 }
 .show-on-load {
   display: none;
+}
+
+@media (max-width: 767px) {
+  .xs-centered {
+    text-align: center;
+  }
 }
 
 /* Navbar
@@ -204,17 +212,10 @@ section {
   opacity: 0.85;
 }
 
-.blog-hr {
-  display: none;
-  border-color: #c5c5c5;
-}
 .blog-tags .label {
   margin-right: 3px;
 }
 @media only screen and (max-width : 767px) {
-  .blog-hr {
-    display: block;
-  }
   .blog-tags {
       text-align: center;
       margin-top: -10px;
