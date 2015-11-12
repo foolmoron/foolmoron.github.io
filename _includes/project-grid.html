@@ -1,5 +1,9 @@
 <div class="project-grid" style="max-width: 1000px;">
-  <div class="project-grid-sizer width1 height1"></div>
+  {% if include.small_items %}
+    <div class="project-grid-sizer widthsmall1 heightsmall1"></div>
+  {% else %}
+    <div class="project-grid-sizer width1 height1"></div>
+  {% endif %}
   {% assign sorted_projects = site.projects | sort:"weight" %}
   {% assign i = 0 %}
   {% for project in sorted_projects reversed %}
