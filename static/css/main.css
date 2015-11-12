@@ -186,14 +186,6 @@ hr {
   padding-bottom: 15px;
 }
 
-/* Tags 
--------------------------------------------------- */
-.tag-News { background-color: #FF4A4A; }
-.tag-Tags { background-color: #447DFF; }
-.tag-Blog { background-color: #25BFA0; }
-.tag-Post { background-color: #C63AD3; }
-.tag-Blah_You_Know { background-color: #E9923E; }
-
 /* Blog list
 -------------------------------------------------- */
 .tag-filter .label {
