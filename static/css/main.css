@@ -28,6 +28,25 @@ hr {
   display: none;
 }
 
+.appstore-button {
+    display: inline-block;
+    width: 203px;
+    height: 60px;
+    overflow: hidden;
+    background-image: url(../img/appstorebutton.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.android-button {
+    display: inline-block;
+    width: 172px;
+    height: 60px;
+    overflow: hidden;
+    background-image: url(../img/androidbutton.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 @media (max-width: 767px) {
   .xs-centered {
     text-align: center;

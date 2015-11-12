@@ -9,17 +9,14 @@ width: 2
 height: 2
 ---
 
-# Test what
-## Yeah
+<p><a href='http://clashcupturbo.com' target='_blank'>Clash Cup Turbo website</a></p>
 
-    <p><a href='http://root76.io/presskit/sheet.php?p=clash_cup_turbo' target='_blank'><img src="img/cctlogo.png" /></a></p>
-    
-    <h4>Platform: TBD (likely PC, Mac, Consoles)</h4>
-    <h4>Development: On-going since Summer 2014</h4>
-    <h4>Team: 2 core + 2-3 collaborators</h4>
-    <h4>My Role:</h4>
-    <ul class="role">
-      <li>All programming</li>
-      <li>Some design</li>
-      <li>Publisher & press interaction</li>
-    </ul>
+<h4>Platform: TBD (likely PC, Mac, Consoles)</h4>
+<h4>Development: On-going since Summer 2014</h4>
+<h4>Team: 2 core + 2-3 collaborators</h4>
+<h4>My Role:</h4>
+<ul class="role">
+  <li>All programming</li>
+  <li>Some design</li>
+  <li>Publisher & press interaction</li>
+</ul>

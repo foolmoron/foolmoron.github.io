@@ -9,22 +9,17 @@ width: 2
 height: 1
 ---
 
-# Test what
-## Yeah
+<p>
+  <a href="http://www.newgrounds.com/portal/view/616600" title="Play City Quake on Newgrounds" target="_blank">
+    <img src="img/cityquakeplaynow.png" style="max-height: 60px;">
+  </a>
+</p>
 
-```html
-    <p>
-      <a href="http://www.newgrounds.com/portal/view/616600" title="Play City Quake on Newgrounds" target="_blank">
-        <img src="img/cityquakeplaynow.png" style="max-height: 60px;">
-      </a>
-    </p>
-    
-    <h4>Platform: Construct 2 deployed to HTML5 web browser</h4>
-    <h4>Development: A fraction of 1 month</h4>
-    <h4>Team: 2</h4>
-    <h4>My Role:</h4>
-    <ul class="role">
-      <li>Director</li>
-      <li>All programming and design</li>
-    </ul>
-```
+<h4>Platform: Construct 2 deployed to HTML5 web browser</h4>
+<h4>Development: A fraction of 1 month</h4>
+<h4>Team: 2</h4>
+<h4>My Role:</h4>
+<ul class="role">
+  <li>Director</li>
+  <li>All programming and design</li>
+</ul>

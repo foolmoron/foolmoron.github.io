@@ -9,17 +9,14 @@ width: 3
 height: 3
 ---
 
-# Test what
-## Yeah
+<p><a href='http://root76.io/' target='_blank'>ROOT 76 website</a></p>
 
-    <p><a href='http://root76.io/' target='_blank'><img src="img/root76logo.png" /></a></p>
-    
-    <h4>Founded: October 2014</h4>
-    <h4>Team: 5 partners, a handful of friends and collaborators</h4>
-    <h4>My Role:</h4>
-    <ul class="role">
-      <li>Partner</li>
-      <li>Business development & press</li>
-      <li>Creative design</li>
-      <li>Technical stuff</li>
-    </ul>
+<h4>Founded: October 2014</h4>
+<h4>Team: 5 partners, a handful of friends and collaborators</h4>
+<h4>My Role:</h4>
+<ul class="role">
+  <li>Partner</li>
+  <li>Business development & press</li>
+  <li>Creative design</li>
+  <li>Technical stuff</li>
+</ul>
