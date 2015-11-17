@@ -1,6 +1,6 @@
 # foolmoron.io
 
-Personal site using [biomadeira](https://github.com/biomadeira)'s awesome [Sustain](https://github.com/biomadeira/sustain) and [Vitae](https://github.com/biomadeira/sustain) Jekyll themes and the [Isotope](http://isotope.metafizzy.co/) library.
+Personal based on [biomadeira](https://github.com/biomadeira)'s awesome [Sustain](https://github.com/biomadeira/sustain) Jekyll theme and the [Isotope](http://isotope.metafizzy.co/) library and some dumb ideas I had.
 
 
 ## Copyright & License
