@@ -3,10 +3,17 @@
 html,
 body {
   height: 100%;
-  background-color: #fff;
+  background-color: #fb972d;
+  color: #ffffff;
   font-family: 'Source Sans Pro', sans-serif;
-  /* The html and body elements cannot have any padding or margin. */
-  border-top: 3px solid #fb972d;
+  text-shadow: 2px 1px 1px black;
+}
+a {
+  color: #ffffff;
+  text-decoration: underline;
+}
+a:hover {
+  color: #dbdbdb;
 }
 /* Wrapper for page content to push down footer */
 #wrap {
@@ -63,67 +70,58 @@ hr {
   margin-bottom: 10px;
 }
 .navbar-default {
-  background-color: #ffffff;
-  border-color: #ffffff;
+  background-color: #fb972d;
+  border: none;
   font-size: 18px;
 }
 .navbar-default .navbar-brand {
-  color: #6b6b6b;
+  color: #ffffff;
+  text-decoration: none;
 }
 .navbar-default .navbar-brand:hover, .navbar-default .navbar-brand:focus {
-  color: #fb972d;
+  color: #dbdbdb;
 }
 .navbar-default .navbar-text {
-  color: #6b6b6b;
+  color: #ffffff;
 }
 .navbar-default .navbar-nav > li > a {
-  color: #6b6b6b;
+  color: #ffffff;
+  text-decoration: none;
 }
-.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
-  color: #fb972d;
+.navbar-default .navbar-nav > li > a:hover {
+  color: #dbdbdb;
+  text-decoration: underline;
 }
-.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
-  color: #6b6b6b;
-  background-color: #ffffff;
+
+.social {
+  text-align: center;
+  padding-top: 14px;
+  word-spacing: 18px;
 }
-.navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:hover, .navbar-default .navbar-nav > .open > a:focus {
-  color: #6b6b6b;
-  background-color: #ffffff;
+.social h4 {
+  margin: 0px;
 }
-.navbar-default .navbar-toggle {
-  border-color: #ffffff;
-}
-.navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
-  background-color: #ffffff;
-}
-.navbar-default .navbar-toggle .icon-bar {
-  background-color: #6b6b6b;
-}
-.navbar-default .navbar-collapse,
-.navbar-default .navbar-form {
-  border-color: #6b6b6b;
-}
-.navbar-default .navbar-link {
-  color: #6b6b6b;
-}
-.navbar-default .navbar-link:hover {
-  color: #6b6b6b;
-}
-@media (max-width: 767px) {
-  .navbar-default .navbar-nav .open .dropdown-menu > li > a {
-    color: #6b6b6b;
+@media only screen and (max-width : 767px) {
+  .social h4 {
+    margin-right: 10px;
   }
-  .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover, .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
-    color: #6b6b6b;
-  }
-  .navbar-default .navbar-nav .open .dropdown-menu > .active > a, .navbar-default .navbar-nav .open .dropdown-menu > .active > a:hover, .navbar-default .navbar-nav .open .dropdown-menu > .active > a:focus {
-    color: #6b6b6b;
-    background-color: #ffffff;
-  }
+}
+.social h4 > a {
+  color: #ffffff;
+}
+.social h4 > a:hover {
+  color: #dbdbdb
 }
 
 /* Custom page CSS
 -------------------------------------------------- */
+
+.panel a {
+  color: #fb972d;
+}
+.panel a:hover {
+  color: #fb972d;
+}
 
 .container {
   width: auto;
@@ -137,12 +135,6 @@ hr {
   margin-top: 5px;
   margin-bottom: 20px;
 }
-.container a {
-  color: #fb972d;
-}
-.container a:hover {
-  color: #fb972d;
-}
 .container .label a {
   color: white;
 }
@@ -153,6 +145,23 @@ hr {
  display: block;
  height: auto;
  max-width: 100%;
+}
+
+.panel {
+  border-style: none;
+  text-shadow: none;
+  color: #333;
+  box-shadow: 5px 4px 4px -3px black;
+  -webkit-box-shadow: 5px 4px 4px -3px black;
+}
+.panel a {
+  text-decoration: none;
+}
+.panel a:hover {
+  text-decoration: underline;
+}
+.panel-body {
+  text-align: left;
 }
 .panel-default h4 {
   text-align: left;
@@ -173,30 +182,24 @@ hr {
 .panel-default h4 a:hover, h5 a:hover {
   color: #fb972d;
 }
-.panel{
-  border-style: none;
-  -webkit-box-shadow: none;
-  box-shadow: none;
-}
-.panel-body {
-  text-align: left;
-}
-.social {
+
+.post-descriptor {
+  margin: 0;
   text-align: center;
-  padding-top: 14px;
-  word-spacing: 18px;
 }
-.social h4 > a {
-  color: #6B6B6B;
-}
+
 .avatar {
   padding-top: 5%;
 }
-.blog-post{
+.blog-title {
   padding-top: 15px;
+  padding-bottom: 10px;
 }
-.blog-title{
-  padding-top: 2px;
+.blog-title a {
+  text-decoration: none;
+}
+.blog-title a:hover {
+  text-decoration: underline;
 }
 .related-posts h4 {
   text-align: center;
@@ -228,6 +231,8 @@ hr {
 
 .blog-tags .label {
   margin-right: 3px;
+  display: inline-block;
+  line-height: 19px;
 }
 @media only screen and (max-width : 767px) {
   .blog-tags {
@@ -339,13 +344,6 @@ hr {
 -------------------------------------------------- */
 footer {
   margin-top: 70px;
-}
-.footer {
-  text-decoration: none !important;
-}
-.text-muted {
-	color: #6b6b6b;
-}
-div.footer{
-  border-bottom: 5px solid #fb972d;
+  text-shadow: none;
+  color: white;
 }

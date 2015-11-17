@@ -3,17 +3,17 @@ layout: layout
 ---
 
 <div class="container">
-  <div class="blog-post">
+  <div class="blog-title">
     <h2>
       <strong><a href="{{ page.url }}">{{ page.title }}</a></strong>
     </h2>
     <img src="{{ site.baseurl }}static/img/{{ page.logo }}" style="max-width: 500px; max-height: 300px;" />
-    <h4>
-      Related posts: <span class="label tag-{{ page.title | replace:' ','_' }}"><a href="{{ site.baseurl }}words.html#{{ page.title }}">{{ page.title }}</a></span>
-    </h4>
   </div>
   <div class="panel panel-default">
     <div class="panel-body">
+      <h5 class="post-descriptor">
+        Related posts: <span class="label tag-{{ page.title | replace:' ','_' }}"><a href="{{ site.baseurl }}words.html#{{ page.title }}">{{ page.title }}</a></span>
+      </h5>
       <h4>
         {{ content }}
       </h4>

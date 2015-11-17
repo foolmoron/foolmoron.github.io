@@ -34,18 +34,15 @@
     <style>
       html,
       body {
-        border-top-color: {{ page.color }};
+        background-color: {{ page.color }};
       }
-      .container a {
+      .navbar-default {
+        background-color: {{ page.color }};
+      }
+      .panel a {
         color: {{ page.color }};
       }
-      .container a:hover {
-        color: {{ page.color }};
-      }
-      .navbar-default .navbar-brand:hover, .navbar-default .navbar-brand:focus {
-        color: {{ page.color }};
-      }
-      .navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
+      .panel a:hover {
         color: {{ page.color }};
       }
       .panel-default h4 a, h5 a {

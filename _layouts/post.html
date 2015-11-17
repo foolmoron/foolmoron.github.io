@@ -3,24 +3,22 @@ layout: layout
 ---
 
 <div class="container">
-	<div class="blog-post">
-		<h2>
-		  <strong><a href="{{ page.url }}">{{ page.title }}</a></strong>
-		</h2>
-	</div>
-	<div class="blog-title">
-		<h4>
-		{{ page.date | date: "%B %e, %Y" }} by {{ site.author }}
-			&nbsp;&nbsp;
-			{% for tag in page.tags %}
-				<span class="label tag-{{ tag | replace:" ","_" }}"><a href="{{ site.baseurl }}words.html#{{ tag }}">{{ tag }}</a></span>
-			{% endfor %}
-		</h4>
-	</div>
-	<div class="panel panel-default">
-		<div class="panel-body">
-			<h4>
-			  {{ content }}
+  <div class="blog-title">
+    <h2>
+      <strong><a href="{{ page.url }}">{{ page.title }}</a></strong>
+    </h2>
+  </div>
+  <div class="panel panel-default">
+    <div class="panel-body">
+      <h5 class="post-descriptor">
+        {{ page.date | date: "%B %e, %Y" }} by {{ site.author }}
+        &nbsp;&nbsp;
+        {% for tag in page.tags %}
+          <span class="label tag-{{ tag | replace:" ","_" }}"><a href="{{ site.baseurl }}words.html#{{ tag }}">{{ tag }}</a></span>
+        {% endfor %}
+      </h5>
+      <h4>
+        {{ content }}
         {% if site.related_posts %}
           <hr>
           <div class="related-posts">
@@ -35,7 +33,7 @@ layout: layout
            {% endfor %}
           </div>
         {% endif %}
-			</h4>
-		</div>
-	</div>
+      </h4>
+    </div>
+  </div>
 </div>
