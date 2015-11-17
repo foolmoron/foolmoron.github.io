@@ -18,7 +18,7 @@ a:hover {
 /* Wrapper for page content to push down footer */
 #wrap {
   padding-bottom: 50px;	
-  min-height: 100%;
+  min-height: calc(100vh - 40px);
   height: auto;
   /* Negative indent footer by its height */
   margin: 0 auto -65px;
