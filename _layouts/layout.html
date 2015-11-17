@@ -1,3 +1,5 @@
+{% assign cachebust = site.time | date: "%s%N" %}
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -24,8 +26,8 @@
     <![endif]-->
 
     <!-- Custom styles for this template -->
-    <link href="{{ site.baseurl }}static/css/main.css" rel="stylesheet">
-    <link href="{{ site.baseurl }}static/css/tags.css" rel="stylesheet">
+    <link href="{{ site.baseurl }}static/css/main.css?v={{ cachebust }}" rel="stylesheet">
+    <link href="{{ site.baseurl }}static/css/tags.css?v={{ cachebust }}" rel="stylesheet">
     <link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,400,200bold,400old" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
     <link href="{{ site.baseurl }}static/css/bootstrap.icon-large.min.css" rel="stylesheet">
@@ -91,9 +93,9 @@
     <script src="{{ site.baseurl }}static/js/isotope.pkgd.min.js"></script>
     <script src="{{ site.baseurl }}static/js/masonry-horizontal.js"></script>
     <script src="{{ site.baseurl }}static/js/docs.min.js"></script>
-    <script src="{{ site.baseurl }}static/js/main.js"></script>
-    <script src="{{ site.baseurl }}static/js/project-grid.js"></script>
-    <script src="{{ site.baseurl }}static/js/blog-tags.js"></script>
+    <script src="{{ site.baseurl }}static/js/main.js?v={{ cachebust }}"></script>
+    <script src="{{ site.baseurl }}static/js/project-grid.js?v={{ cachebust }}"></script>
+    <script src="{{ site.baseurl }}static/js/blog-tags.js?v={{ cachebust }}"></script>
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src="{{ site.baseurl }}static/js/ie10-viewport-bug-workaround.js"></script>
   </body>
