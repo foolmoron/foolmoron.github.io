@@ -3,7 +3,7 @@ layout: project
 title: SRRN Vita Platformer
 summary: "An unreleased platformer I worked on at SRRN Games using the Unity Vita plugin."
 logo: srrnlogo.png
-color: rgb(0, 200, 50)
+color: rgb(46, 187, 57)
 weight: 2
 width: 2
 height: 2

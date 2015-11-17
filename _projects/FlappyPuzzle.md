@@ -3,7 +3,7 @@ layout: project
 title: Flappy Puzzle
 summary: "A touch-based game made for the <a href='http://itch.io/jam/flappyjam' target='_blank'>Flappy Jam</a>.<br />Graphics inspired by Tetris, difficulty and controls inspired by Flappy Bird."
 logo: flappypuzzlelogo.png
-color: rgb(154, 157, 57)
+color: rgb(43, 41, 26)
 weight: 3
 width: 1
 height: 1
@@ -18,5 +18,4 @@ Team: 1
 My Role:  
   
 * All design, programming, and art  
-* (music by Joshua Cipolla + open-source sounds)  
-  
+* Music by Joshua Cipolla
