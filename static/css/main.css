@@ -63,6 +63,13 @@ hr {
   }
 }
 
+/* Effects */
+.shadow-div {
+}
+.shadow-text {
+  -webkit-font-smoothing: subpixel-antialiased;
+}
+
 /* Navbar
 -------------------------------------------------- */
 
