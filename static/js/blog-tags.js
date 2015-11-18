@@ -1,7 +1,7 @@
 (function() {
-  var tagFilters, taggedItems;
-  tagFilters = $('[data-tag]');
-  taggedItems = $('[data-tags]');
+  var tagFilters = $('[data-tag]');
+  var taggedItems = $('[data-tags]');
+  var noItemsMessage = $('.no-items-message');
 
   // ditch if this script doesn't apply
   if (!tagFilters.length || !taggedItems.length) {
@@ -38,6 +38,7 @@
             tagFilters.filter('[data-tag="' + tagsToFilterBy[t] + '"]').addClass('active');
           };
           // hide tagged items based on tags
+          var itemsShown = 0;
           for (var i = 0; i < taggedItems.length; i++) {
             var item = taggedItems.eq(i);
             var itemTags = item.data('tags');
@@ -48,10 +49,18 @@
             };
             if (matchingTag) {
               item.fadeIn(fadeSpeed);
+              itemsShown++;
             } else {
               item.fadeOut(fadeSpeed);
             }
           };
+          // show no items message if filter doesn't return results
+          if (itemsShown == 0) {
+            noItemsMessage.text('No results for filter' + (tagsToFilterBy.length > 1 ? 's' : '') + ': ' + tagsToFilterBy.join(', ') + '')
+            noItemsMessage.fadeIn(fadeSpeed);
+          } else {
+            noItemsMessage.fadeOut(fadeSpeed);
+          }
         }
       };
     };
