@@ -3,11 +3,11 @@ layout: layout
 ---
 
 <section id="about">
-  <div class="container xs-centered shadow-text" style="text-align: left;">
-    <h3>Hi, I'm Momin.</h3>
-    <h3>I make games and websites in <a href="https://www.google.com/search?q=RVA" target="_blank">Richmond, Virginia</a>.</h3>
-    <h3>Check out my posts and projects below.</h3>
-    <h3>Contact me for work inquiries, questions, comments, or whatever reason at <a href="http://twitter.com/{{ site.twitter }}">@{{ site.twitter }}</a> or by <a href="mailto:{{ site.email }}">email</a>.</h3>
+  <div class="container xs-centered" style="text-align: left;">
+    <h3 class="shadow-text">Hi, I'm Momin.</h3>
+    <h3 class="shadow-text">I make games and websites in <a href="https://www.google.com/search?q=RVA" target="_blank">Richmond, Virginia</a>.</h3>
+    <h3 class="shadow-text">Check out my posts and projects below.</h3>
+    <h3 class="shadow-text">Contact me for work inquiries, questions, comments, or whatever reason at <a href="http://twitter.com/{{ site.twitter }}">@{{ site.twitter }}</a> or by <a href="mailto:{{ site.email }}">email</a>.</h3>
   </div>
 </section>
 
@@ -15,7 +15,7 @@ layout: layout
   <div class="container">
     <h2 class="shadow-text">Some words I've written</h2>
     {% include post-list.html post_list_limit=4 no_filter=true %}
-    <h3 style="margin-top: -14px;"><a href="./words">More words...</a></h3>
+    <h3 class="shadow-text" style="margin-top: -14px;"><a href="./words">More words...</a></h3>
   </div>
 </section>
 
@@ -23,7 +23,7 @@ layout: layout
   <div class="container">
     <h2 class="shadow-text">Some things I've done</h2>
     {% include project-grid.html project_grid_limit=46 small_items=true %}
-    <h3 style="margin-top: -14px;"><a href="./things">More things...</a></h3>
+    <h3 class="shadow-text" style="margin-top: -14px;"><a href="./things">More things...</a></h3>
   </div>
 </section>
 

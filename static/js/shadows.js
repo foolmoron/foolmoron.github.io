@@ -64,6 +64,7 @@ $(window).load(function() {
         var shadowBlur = Math.max(8.5 - magnitude(mouseToItemVector) / 200, 0);
         var shadowSize = magnitude(mouseToItemVector) / 740;
         var shadowAlpha = Math.max(1 - magnitude2(mouseToItemVector) / 1000000, 0.5);
+        panel.$el.css('box-shadow', shadowX + 'px ' + shadowY + 'px ' + shadowBlur + 'px ' + shadowSize + 'px rgba(0,0,0,' + shadowAlpha + ')')
         panel.$el.css('-webkit-box-shadow', shadowX + 'px ' + shadowY + 'px ' + shadowBlur + 'px ' + shadowSize + 'px rgba(0,0,0,' + shadowAlpha + ')')
       };
       for (var i = 0; i < texts.length; i++) {
@@ -71,7 +72,7 @@ $(window).load(function() {
         var mouseToItemVector = { x: text.offsetX - mouseX, y: text.offsetY - mouseY };
         var shadowX = Math.sign(mouseToItemVector.x) * Math.sqrt(Math.abs(mouseToItemVector.x)) / 10;
         var shadowY = Math.sign(mouseToItemVector.y) * Math.sqrt(Math.abs(mouseToItemVector.y)) / 10;
-        var shadowBlur = Math.max(7 - magnitude(mouseToItemVector) / 100, 0);
+        var shadowBlur = Math.max(7 - magnitude(mouseToItemVector) / 20, 0);
         var shadowAlpha = Math.max(1 - magnitude2(mouseToItemVector) / 1000000, 0.5);
         text.$el.css('text-shadow', shadowX + 'px ' + shadowY + 'px ' + shadowBlur + 'px rgba(0,0,0,' + shadowAlpha + ')')
       };
