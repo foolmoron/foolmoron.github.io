@@ -41,6 +41,29 @@ $(window).load(function() {
       offsetY: $(item).offset().top + $(item).height()/2,
     }
   });
+  // EXPERIMENTAL: split up texts into words so they each have their own shadow
+  // var originalTexts = $('.shadow-text');
+  // var texts = [];
+  // for (var i = originalTexts.length - 1; i >= 0; i--) {
+  //   var contents = originalTexts.eq(i).contents()
+  //   for (var j = contents.length - 1; j >= 0; j--) {
+  //     var content = contents[j];
+  //     if (content.nodeName == '#text') {
+  //       var newHTML = content.nodeValue.replace(/[^\s]+/g, "<span>$&</span>");
+  //       $(newHTML).insertBefore(content);
+  //       content.remove();
+  //     } else {
+  //       content.innerHTML = content.innerHTML.replace(/[^\s]+/g, "<span>$&</span>");
+  //     }
+  //   };
+  //   texts = texts.concat(originalTexts.eq(i).find('span').get().map(function(item) { 
+  //     return {
+  //       $el: $(item),
+  //       offsetX: $(item).offset().left + $(item).width()/2,
+  //       offsetY: $(item).offset().top + $(item).height()/2,
+  //     }
+  //   }));
+  // };
 
   // on-demand mouse position
   var mouseX = -1;
