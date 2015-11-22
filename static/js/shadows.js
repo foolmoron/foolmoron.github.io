@@ -26,21 +26,39 @@ window.requestAnimFrame = (function(){
 
 // fire on load, after items are all rendered and positioned
 $(window).load(function() {
-  // grab items, cache offsets up front to avoid reflow costs when calculating shadows, since they never move anyway
-  var panels = $('.shadow-div').get().map(function(item) { 
-    return {
-      $el: $(item),
-      offsetX: $(item).offset().left + $(item).width()/2,
-      offsetY: $(item).offset().top + $(item).height()/2,
-    }
+  var panels = [];
+  var text = []
+  var cacheOffsets = function() {
+    panels = $('.shadow-div').get().map(function(item) { 
+      return {
+        $el: $(item),
+        offsetX: $(item).offset().left + $(item).width()/2,
+        offsetY: $(item).offset().top + $(item).height()/2,
+      }
+    });
+    texts = $('.shadow-text').get().map(function(item) { 
+      return {
+        $el: $(item),
+        offsetX: $(item).offset().left + $(item).width()/2,
+        offsetY: $(item).offset().top + $(item).height()/2,
+      }
+    });
+  }
+  // grab items, cache offsets up front to avoid reflow costs when calculating shadows
+  cacheOffsets();
+
+  // store screen size for normalization
+  var screenW = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
+  var screenH = window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight;
+
+  $(window).resize(function() { 
+    // recache offsets when window resizes
+    cacheOffsets();
+    // refresh screen size as well
+    screenW = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
+    screenH = window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight;    
   });
-  var texts = $('.shadow-text').get().map(function(item) { 
-    return {
-      $el: $(item),
-      offsetX: $(item).offset().left + $(item).width()/2,
-      offsetY: $(item).offset().top + $(item).height()/2,
-    }
-  });
+  
   // EXPERIMENTAL: split up texts into words so they each have their own shadow
   // var originalTexts = $('.shadow-text');
   // var texts = [];
@@ -65,13 +83,6 @@ $(window).load(function() {
   //   }));
   // };
 
-  // screen size for normalization
-  var screenW;
-  var screenH;
-  setInterval(function() {
-    screenW = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
-    screenH = window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight;
-  }, 100);
   // on-demand mouse position
   var mouseX = -1;
   var mouseY = -1;
