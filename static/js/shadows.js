@@ -26,6 +26,13 @@ window.requestAnimFrame = (function(){
 
 // fire on load, after items are all rendered and positioned
 $(window).load(function() {
+  // check luminosity of page color to decide between white and black shadows
+  var regex = /\((.*?), (.*?), (.*?)\)+/g;
+  var result = regex.exec($('body').css('background-color'));
+  var lum = 0.2126*parseInt(result[1]) + 0.7152*parseInt(result[2]) + 0.0722*parseInt(result[3])
+  var shadowColor = lum > 45 ? '0,0,0,' : '160,160,160,';
+
+  // grab shadow-sensitive elemtns in a nice structure and cache offsets up front to avoid reflow costs when calculating shadows
   var panels = [];
   var text = []
   var cacheOffsets = function() {
@@ -44,7 +51,6 @@ $(window).load(function() {
       }
     });
   }
-  // cache offsets up front to avoid reflow costs when calculating shadows
   cacheOffsets();
 
   // store screen size for shadow calculations
@@ -129,8 +135,8 @@ $(window).load(function() {
         var shadowBlur = Math.max(10 - magnitude(shadowVector) * 8, 1);
         var shadowSize = magnitude(shadowVector) / 0.74;
         var shadowAlpha = Math.max(0.75 - magnitude2(shadowVector), 0.5);
-        panel.$el.css('box-shadow', shadowX + 'px ' + shadowY + 'px ' + shadowBlur + 'px ' + shadowSize + 'px rgba(0,0,0,' + shadowAlpha + ')')
-        panel.$el.css('-webkit-box-shadow', shadowX + 'px ' + shadowY + 'px ' + shadowBlur + 'px ' + shadowSize + 'px rgba(0,0,0,' + shadowAlpha + ')')
+        panel.$el.css('box-shadow', shadowX + 'px ' + shadowY + 'px ' + shadowBlur + 'px ' + shadowSize + 'px rgba(' + shadowColor + shadowAlpha + ')')
+        panel.$el.css('-webkit-box-shadow', shadowX + 'px ' + shadowY + 'px ' + shadowBlur + 'px ' + shadowSize + 'px rgba(' + shadowColor + shadowAlpha + ')')
       };
       for (var i = 0; i < texts.length; i++) {
         var text = texts[i]
@@ -139,7 +145,7 @@ $(window).load(function() {
         var shadowY = Math.sign(shadowVector.y) * Math.sqrt(Math.abs(shadowVector.y)) * 2.5;
         var shadowBlur = Math.max(4 - magnitude(shadowVector) / 0.2, 0);
         var shadowAlpha = Math.max(0.75 - magnitude2(shadowVector), 0.5);
-        text.$el.css('text-shadow', shadowX + 'px ' + shadowY + 'px ' + shadowBlur + 'px rgba(0,0,0,' + shadowAlpha + ')')
+        text.$el.css('text-shadow', shadowX + 'px ' + shadowY + 'px ' + shadowBlur + 'px rgba(' + shadowColor + shadowAlpha + ')')
       };
     }   
   }
