@@ -7,7 +7,7 @@ window.requestAnimFrame = (function(){
           };
 })();
 
-// in-browser tweaking stuff
+//// in-browser tweaking stuff
 // window.xxx = 100;
 // window.yyy = 100;
 // $(window).keypress(function(e) {
@@ -44,10 +44,10 @@ $(window).load(function() {
       }
     });
   }
-  // grab items, cache offsets up front to avoid reflow costs when calculating shadows
+  // cache offsets up front to avoid reflow costs when calculating shadows
   cacheOffsets();
 
-  // store screen size for normalization
+  // store screen size for shadow calculations
   var screenW = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
   var screenH = window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight;
 
@@ -59,7 +59,7 @@ $(window).load(function() {
     screenH = window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight;    
   });
   
-  // EXPERIMENTAL: split up texts into words so they each have their own shadow
+  //// EXPERIMENTAL: split up texts into words so they each have their own shadow
   // var originalTexts = $('.shadow-text');
   // var texts = [];
   // for (var i = originalTexts.length - 1; i >= 0; i--) {
@@ -110,7 +110,7 @@ $(window).load(function() {
   // constantly recalculate shadows as mouse moves around screen
   var magnitude = function(vector) { return Math.sqrt(vector.x*vector.x + vector.y*vector.y); };
   var magnitude2 = function(vector) { return vector.x*vector.x + vector.y*vector.y; };
-  var getNormalizedShadowVector = function(item) {
+  var getNormalizedShadowVector = function(item) { // normalizes gyro/mouse to [-1, 1]
     if (lastGyroTime > lastMouseTime) {
       return { x: gyroG / 90, y: gyroB / 90 };
     } else {
