@@ -112,7 +112,7 @@ $(window).load(function() {
   var magnitude2 = function(vector) { return vector.x*vector.x + vector.y*vector.y; };
   var getNormalizedShadowVector = function(item) { // normalizes gyro/mouse to [-1, 1]
     if (lastGyroTime > lastMouseTime) {
-      return { x: gyroG / 90, y: gyroB / 90 };
+      return { x: gyroG * 2 / 90, y: gyroB / 90 }; // actually we're gonna cheat and make the gamma feel stronger than it really is
     } else {
       return { x: (item.offsetX - mouseX)/(screenW/2), y: (item.offsetY - mouseY)/(screenH/2) };
     }
