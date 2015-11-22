@@ -97,7 +97,7 @@ $(window).load(function() {
   var gyroG = null;
   var lastGyroTime = 0;
   if (gyro.hasFeature('devicemotion')) {
-    gyro.frequency = 100;
+    gyro.frequency = 1000/16; // 60fps
     gyro.startTracking(function(orientation) {
       if (gyroB !== orientation.beta || gyroG !== orientation.gamma) {
         gyroB = orientation.beta || gyroB;
@@ -110,9 +110,9 @@ $(window).load(function() {
   // constantly recalculate shadows as mouse moves around screen
   var magnitude = function(vector) { return Math.sqrt(vector.x*vector.x + vector.y*vector.y); };
   var magnitude2 = function(vector) { return vector.x*vector.x + vector.y*vector.y; };
-  var getNormalizedShadowVector = function(item) { // normalizes gyro/mouse to [-1, 1]
+  var getNormalizedShadowVector = function(item) { // normalizes gyro/mouse to [-1, 1]ish
     if (lastGyroTime > lastMouseTime) {
-      return { x: gyroG * 2 / 90, y: gyroB / 90 }; // actually we're gonna cheat and make the gamma feel stronger than it really is
+      return { x: gyroG * 3 / 90, y: gyroB * 1.5 / 90 }; // actually we're gonna cheat and make the gyro feel stronger than it really is
     } else {
       return { x: (item.offsetX - mouseX)/(screenW/2), y: (item.offsetY - mouseY)/(screenH/2) };
     }
