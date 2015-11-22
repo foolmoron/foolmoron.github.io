@@ -1,7 +1,9 @@
 /* Main page with stikky-footer
 -------------------------------------------------- */
-html,
-body {
+h1, h2, h3 {
+  font-family: Courgette;
+}
+html, body {
   height: 100%;
   background-color: #fb972d;
   color: #ffffff;
