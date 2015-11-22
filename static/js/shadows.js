@@ -65,38 +65,69 @@ $(window).load(function() {
   //   }));
   // };
 
+  // screen size for normalization
+  var screenW;
+  var screenH;
+  setInterval(function() {
+    screenW = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
+    screenH = window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight;
+  }, 100);
   // on-demand mouse position
   var mouseX = -1;
   var mouseY = -1;
+  var lastMouseTime = 0;
   $('html').mousemove(function(e) {
     mouseX = e.pageX;
     mouseY = e.pageY;
+    lastMouseTime = new Date().getTime();
   });
+  // gyro for mobile
+  var gyroB = null;
+  var gyroG = null;
+  var lastGyroTime = 0;
+  if (gyro.hasFeature('devicemotion')) {
+    gyro.frequency = 100;
+    gyro.startTracking(function(orientation) {
+      if (gyroB !== orientation.beta || gyroG !== orientation.gamma) {
+        gyroB = orientation.beta || gyroB;
+        gyroG = orientation.gamma || gyroG;
+        lastGyroTime = new Date().getTime();
+      }
+    });
+  }
 
   // constantly recalculate shadows as mouse moves around screen
   var magnitude = function(vector) { return Math.sqrt(vector.x*vector.x + vector.y*vector.y); };
   var magnitude2 = function(vector) { return vector.x*vector.x + vector.y*vector.y; };
+  var getNormalizedShadowVector = function(item) {
+    if (lastGyroTime > lastMouseTime) {
+      return { x: gyroG / 90, y: gyroB / 90 };
+    } else {
+      return { x: (item.offsetX - mouseX)/(screenW/2), y: (item.offsetY - mouseY)/(screenH/2) };
+    }
+  };
   var recalculateShadows = function() {
     requestAnimFrame(recalculateShadows);
-    if (mouseX > 0 && mouseY > 0) { // don't do mouse shadowing until there's a mouse event
+    //console.log(mouseX, mouseY, gyroB, gyroG);
+    if (lastMouseTime || lastGyroTime) { // don't do mouse shadowing until there's a mouse/gyro event
       for (var i = 0; i < panels.length; i++) {
         var panel = panels[i];
-        var mouseToItemVector = { x: panel.offsetX - mouseX, y: panel.offsetY - mouseY };
-        var shadowX = mouseToItemVector.x / 390;
-        var shadowY = mouseToItemVector.y / 150;
-        var shadowBlur = Math.max(8.5 - magnitude(mouseToItemVector) / 100, 2);
-        var shadowSize = magnitude(mouseToItemVector) / 740;
-        var shadowAlpha = Math.max(0.75 - magnitude2(mouseToItemVector) / 1000000, 0.5);
+        var shadowVector = getNormalizedShadowVector(panel);
+        var shadowX = shadowVector.x / 0.2;
+        var shadowY = shadowVector.y / 0.3;
+        var shadowBlur = Math.max(10 - magnitude(shadowVector) * 8, 1);
+        var shadowSize = magnitude(shadowVector) / 0.74;
+        var shadowAlpha = Math.max(0.75 - magnitude2(shadowVector), 0.5);
         panel.$el.css('box-shadow', shadowX + 'px ' + shadowY + 'px ' + shadowBlur + 'px ' + shadowSize + 'px rgba(0,0,0,' + shadowAlpha + ')')
         panel.$el.css('-webkit-box-shadow', shadowX + 'px ' + shadowY + 'px ' + shadowBlur + 'px ' + shadowSize + 'px rgba(0,0,0,' + shadowAlpha + ')')
       };
       for (var i = 0; i < texts.length; i++) {
         var text = texts[i]
-        var mouseToItemVector = { x: text.offsetX - mouseX, y: text.offsetY - mouseY };
-        var shadowX = Math.sign(mouseToItemVector.x) * Math.sqrt(Math.abs(mouseToItemVector.x)) / 10;
-        var shadowY = Math.sign(mouseToItemVector.y) * Math.sqrt(Math.abs(mouseToItemVector.y)) / 10;
-        var shadowBlur = Math.max(4 - magnitude(mouseToItemVector) / 20, 0);
-        var shadowAlpha = Math.max(0.75 - magnitude2(mouseToItemVector) / 1000000, 0.5);
+        var shadowVector = getNormalizedShadowVector(text);
+        var shadowX = Math.sign(shadowVector.x) * Math.sqrt(Math.abs(shadowVector.x)) * 3.5;
+        var shadowY = Math.sign(shadowVector.y) * Math.sqrt(Math.abs(shadowVector.y)) * 2.5;
+        var shadowBlur = Math.max(4 - magnitude(shadowVector) / 0.2, 0);
+        var shadowAlpha = Math.max(0.75 - magnitude2(shadowVector), 0.5);
         text.$el.css('text-shadow', shadowX + 'px ' + shadowY + 'px ' + shadowBlur + 'px rgba(0,0,0,' + shadowAlpha + ')')
       };
     }   
