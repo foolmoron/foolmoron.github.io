@@ -130,10 +130,10 @@ $(window).load(function() {
       for (var i = 0; i < panels.length; i++) {
         var panel = panels[i];
         var shadowVector = getNormalizedShadowVector(panel);
-        var shadowX = shadowVector.x / 0.2;
-        var shadowY = shadowVector.y / 0.3;
+        var shadowX = Math.min(shadowVector.x / 0.2, 10);
+        var shadowY = Math.min(shadowVector.y / 0.3, 10);
         var shadowBlur = Math.max(10 - magnitude(shadowVector) * 8, 1);
-        var shadowSize = magnitude(shadowVector) / 0.74;
+        var shadowSize = Math.min(magnitude(shadowVector) / 0.74, 1.25);
         var shadowAlpha = Math.max(0.75 - magnitude2(shadowVector), 0.5);
         panel.$el.css('box-shadow', shadowX + 'px ' + shadowY + 'px ' + shadowBlur + 'px ' + shadowSize + 'px rgba(' + shadowColor + shadowAlpha + ')')
         panel.$el.css('-webkit-box-shadow', shadowX + 'px ' + shadowY + 'px ' + shadowBlur + 'px ' + shadowSize + 'px rgba(' + shadowColor + shadowAlpha + ')')
