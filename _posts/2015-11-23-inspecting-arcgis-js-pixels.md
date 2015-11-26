@@ -14,7 +14,7 @@ One of the primary purposes of our Wildfire Risk Assessment Portal (WRAP) web ap
 The typical legend solution is an additional page or panel next to the map that lists various shapes and colors describing the data on the map. These are very useful in printed maps, but they can be cumbersome, unintuitive, and boring in a fully interactive javascript app on a computer or phone browser.
 
 <p style="text-align: center;">
-  <img alt="" class="align-none" onmouseout="this.style.width='550px'" onmouseover="this.style.width='100%'" src="http://www.timmons.com/uploads/legendold.png" style="width: 100%; height: auto; transition: all 0.25s;">
+  <img alt="" class="align-none" onmouseout="this.style.width='550px'" onmouseover="this.style.width='100%'" src="http://www.timmons.com/uploads/legendold.png" style="width: 550px; height: auto; transition: all 0.25s;">
 </p>
 <p style="text-align: center;">
   <i>Map with a legend from one of ESRI's ArcGIS Javascript samples. Source: </i><a href="http://developers.arcgis.com/javascript/samples/widget_legend/" target="_blank"><i>developers.arcgis.com/javascript/samples/widget_legend</i></a>
