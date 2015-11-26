@@ -132,6 +132,13 @@ hr {
   color: #fb972d;
 }
 
+.content {
+  font-size: 16px;
+}
+.content p {
+  margin: 15px 0px;
+}
+
 .container {
   width: auto;
   max-width: 800px;
