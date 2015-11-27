@@ -16,6 +16,7 @@ height: 1
 Platform: Construct 2 deployed to HTML5 web browser  
 Development: A fraction of 1 month  
 Team: 2  
+Source Code: [GitHub](https://github.com/foolmoron/CityQuake)  
 My Role:  
 
 * Director

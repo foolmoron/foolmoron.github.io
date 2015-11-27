@@ -15,6 +15,7 @@ height: 2
 Platform: HaxeFlixel exported to Flash  
 Development: 48 hours  
 Team: 1  
+Source Code: [GitHub](https://github.com/foolmoron/Clickacabra)  
 My Role:  
   
 * Everything!  

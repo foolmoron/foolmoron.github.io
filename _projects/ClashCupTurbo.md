@@ -14,6 +14,7 @@ height: 2
 Platform: TBD (likely PC, Mac, Consoles)  
 Development: On-going since Summer 2014  
 Team: 2 core + 2-3 collaborators  
+Source Code: Private :(  
 My Role:  
   
 * All programming  

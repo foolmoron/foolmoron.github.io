@@ -15,6 +15,7 @@ height: 1
 Platform: Plain HTML5 (works best on Chrome/Firefox)  
 Development: 48 hours  
 Team: 1  
+Source Code: [GitHub](https://github.com/foolmoron/SuperResizer)  
 My Role:  
   
 * Everything!  

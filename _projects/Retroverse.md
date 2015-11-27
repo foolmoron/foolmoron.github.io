@@ -21,6 +21,7 @@ height: 1
 Platform: XNA deployed to Windows  
 Development: A fraction of 9 months  
 Team: ~7  
+Source Code: [GitHub](https://github.com/foolmoron/Retroverse)  
 My Role:  
   
 * Director  

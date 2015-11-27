@@ -15,6 +15,7 @@ height: 1
 Platform: <a href='http://www.isogenicengine.com/' target='_blank'>Isogenic Engine</a> (HTML5) aimed at all browsers  
 Development: 12 hours  
 Team: 1  
+Source Code: [GitHub](https://github.com/foolmoron/FlappyPuzzle)  
 My Role:  
   
 * All design, programming, and art  

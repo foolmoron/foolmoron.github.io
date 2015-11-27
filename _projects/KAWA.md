@@ -15,6 +15,7 @@ height: 2
 Platform: <a href="http://phaser.io/" target="_blank">Phaser</a> HTML5 engine for desktop and mobile browsers  
 Development: A fraction of 1 week  
 Team: 3  
+Source Code: [GitHub](https://github.com/foolmoron/Kawaii-Wormhole-Adventure)  
 My Role:  
 
 * All programming and design

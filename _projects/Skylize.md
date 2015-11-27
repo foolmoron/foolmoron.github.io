@@ -15,6 +15,7 @@ height: 1
 Platform: <a href='http://www.isogenicengine.com/' target='_blank'>Isogenic Engine</a> (HTML5) aimed at all browsers  
 Development: 8 hours  
 Team: 1  
+Source Code: [GitHub](https://github.com/foolmoron/Skylize)  
 My Role:  
   
 * Everything!  
