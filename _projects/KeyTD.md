@@ -9,6 +9,14 @@ width: 2
 height: 1
 ---
 
+<div class="row" style="margin-bottom: 10px;">
+  <div class="col-xs-12 col-sm-6">
+    <a href="http://www.newgrounds.com/portal/view/656648" target="_blank">
+      <img width="100%" src="{{ site.baseurl }}static/img/newgroundsplaynow.png" title="Play KeyTD on Newgrounds" />
+    </a>
+  </div>
+</div>
+
 <iframe src="//itch.io/embed/23607?linkback=true" 
   width="552" height="167" frameborder="0"></iframe>
   
