@@ -30,7 +30,7 @@ $(window).load(function() {
   var regex = /\((.*?), (.*?), (.*?)\)+/g;
   var result = regex.exec($('body').css('background-color'));
   var lum = 0.2126*parseInt(result[1]) + 0.7152*parseInt(result[2]) + 0.0722*parseInt(result[3])
-  var shadowColor = lum > 45 ? '0,0,0,' : '160,160,160,';
+  var shadowColor = lum > 45 ? '0,0,0,' : '185,185,185,';
 
   // grab shadow-sensitive elemtns in a nice structure and cache offsets up front to avoid reflow costs when calculating shadows
   var panels = [];
