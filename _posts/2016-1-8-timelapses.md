@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Timelapses for game and web development
-color: '#007755'
+color: '#A0CDFB'
 tags:
 - Web Dev
 - Game Dev
