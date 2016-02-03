@@ -3,8 +3,6 @@ collections:
   projects:
     output: true
 highlighter: rouge
-rdiscount:
-  extensions: [smart]
 permalink: /:title
 paginate: 5
 port: 3000
