@@ -25,8 +25,7 @@ Click and drag between torches to connect them and form the shapes required to s
 
 Made for [Global Game Jam 2016](http://globalgamejam.org/2016/games/cloister). Inspired by The Witness.
 
-CREDITS
-Momin Khan - Design
-[Brendan Mauer](http://brendanmauerart.com/) - Art
-[Daniel Davis](https://twitter.com/an0va) - Audio
-[Emily Kundrot](https://twitter.com/magical_grill) - Additional Art
+In collaboration with:  
+[Brendan Mauer](http://brendanmauerart.com/) - Art  
+[Daniel Davis](https://twitter.com/an0va) - Audio  
+[Emily Kundrot](https://twitter.com/magical_grill) - Additional Art  
