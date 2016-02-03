@@ -3,7 +3,6 @@ collections:
   projects:
     output: true
 highlighter: rouge
-markdown: rdiscount
 rdiscount:
   extensions: [smart]
 permalink: /:title
