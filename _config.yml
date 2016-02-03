@@ -2,7 +2,7 @@
 collections:
   projects:
     output: true
-highlighter: pygments
+highlighter: rouge
 markdown: rdiscount
 rdiscount:
   extensions: [smart]
