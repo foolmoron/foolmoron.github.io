@@ -65,7 +65,7 @@
     <!-- Auto-generate tag colors for projects -->
     <style>
       {% for project in site.projects %}
-        .tag-{{ project.title | replace:' ','_' }} {
+        .tag-{{ project.title | replace:' ','_' | replace:"'",'' }} {
           background-color: {{ project.color }};
         }
       {% endfor %}

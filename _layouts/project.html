@@ -12,7 +12,7 @@ layout: layout
   <div class="panel panel-default shadow-div">
     <div class="panel-body">
       <h5 class="post-descriptor">
-        Related posts: <span class="label tag-{{ page.title | replace:' ','_' }}"><a href="{{ site.baseurl }}words#{{ page.title }}">{{ page.title }}</a></span>
+        Related posts: <span class="label tag-{{ page.title | replace:' ','_' | replace:"'",'' }}"><a href="{{ site.baseurl }}words#{{ page.title }}">{{ page.title }}</a></span>
       </h5>
       <hr>
       <div class="content">
