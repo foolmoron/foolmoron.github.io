@@ -26,6 +26,11 @@ window.requestAnimFrame = (function(){
 
 // fire on load, after items are all rendered and positioned
 $(window).load(function() {
+  /* * * * * * * * * * * * *\
+  * Disabling this for now  *
+  \* * * * * * * * * * * * */
+  return;
+
   // check luminosity of page color to decide between white and black shadows
   var regex = /\((.*?), (.*?), (.*?)\)+/g;
   var result = regex.exec($('body').css('background-color'));
